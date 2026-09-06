@@ -15,7 +15,7 @@
 	td.accent, td.gender { white-space: nowrap; }
 	.na { color: #6b615c; text-align: center; }
 	button.play { background: #b23a32; color: #fff; border: 0; border-radius: 6px; width: 34px; height: 28px; cursor: pointer; font-size: 0.8rem; }
-	button.play.playing { background: #3b4a8c; }
+	button.play.playing { background: #3b4a8c; box-shadow: 0 0 0 2px #8fa3ff; }
 	button.play:hover { background: #8f2d27; }
 	.text { color: #b8aca4; font-style: italic; }
 </style>
@@ -79,19 +79,30 @@
 </table>
 
 <script>
+	// Delegated listener — works for every section regardless of DOM order.
+	// Playing state: icon swaps to "⏸" and the button turns indigo.
 	let current = null
-	document.querySelectorAll('button.play').forEach((btn) => {
-		btn.addEventListener('click', () => {
-			const src = btn.dataset.src
-			if (current && current.src.endsWith(src)) {
-				current.pause(); current.currentTime = 0; btn.classList.remove('playing'); current = null; return
-			}
-			if (current) { current.pause(); document.querySelectorAll('button.playing').forEach((b) => b.classList.remove('playing')) }
-			current = new Audio(src)
-			btn.classList.add('playing')
-			current.onended = () => { btn.classList.remove('playing'); current = null }
-			current.play()
-		})
+	let currentBtn = null
+
+	function stopCurrent() {
+		if (current) { current.pause(); current.currentTime = 0 }
+		if (currentBtn) { currentBtn.classList.remove('playing'); currentBtn.textContent = '▶' }
+		current = null; currentBtn = null
+	}
+
+	document.addEventListener('click', (event) => {
+		const btn = event.target.closest('button.play')
+		if (!btn) return
+		const src = btn.dataset.src
+		if (currentBtn === btn) { stopCurrent(); return }
+		stopCurrent()
+		current = new Audio(src)
+		currentBtn = btn
+		btn.classList.add('playing')
+		btn.textContent = '⏸'
+		current.onended = () => stopCurrent()
+		current.onerror = () => stopCurrent()
+		current.play()
 	})
 </script>
 
