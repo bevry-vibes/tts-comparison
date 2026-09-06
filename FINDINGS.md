@@ -36,6 +36,28 @@ Sources: [Artificial Analysis open-weights leaderboard](https://artificialanalys
 
 > Caution learned the hard way: never host model weights or run third-party CMake builds inside the repo's `data/` directory — a NeMo build wiped the directory once. Venvs need `pip` + `en_core_web_sm` installed explicitly when created with `uv venv`.
 
+## Accent × gender coverage (the honest matrix)
+
+| Engine | UK | US | AU | International/neutral | Bahasa Indonesia | Genders |
+| --- | --- | --- | --- | --- | --- | --- |
+| Breeze TTS 2 | ✅ (designed) | ✅ (designed) | ✅ (designed) | ✅ (designed) | ❌ (EN+ZH only) | any, via design text |
+| Kokoro | ✅ bf/bm ×4+ | ✅ af/am ×9+ | ❌ none in v1.0 | ❌ | ❌ | F+M per accent |
+| Piper | ✅ alan/alba(+jenny/amy) | ✅ lessac/ryan(+more) | ❌ none in rhasspy voices | ❌ | ❌ | F+M per accent |
+| macOS system voices | ✅ Daniel | ✅ Samantha | ✅ Karen | ❌ | ✅ Damayanti (id-ID) | per installed voice |
+| Magpie 357M | ❌ | ✅ Sofia/Leo/Jason/John(+Aria) | ❌ | ❌ | ❌ (12 languages, no ID) | F+M |
+| Higgs v3 (mlx) | ⚠️ cloning only | ⚠️ cloning only | ⚠️ cloning only | ⚠️ cloning only | ✅ 100+ languages | default voice; more via reference clips |
+| Chatterbox | ⚠️ cloning only | ⚠️ cloning only | ❌ | ❌ | ⚠️ Malay (closest relative) | default/cloned |
+
+Key finding for Sumba Bisa: **no open engine ships an Australian English voice** — AU comes only from Breeze's voice design or the OS's Karen. Indonesian is served by Higgs (excellent) and macOS Damayanti; Magpie/Kokoro/Breeze/Chatterbox have none.
+
+## Engine quirks discovered (cost someone hours — read before running)
+
+- **Higgs single words**: the mlx runtime emits silence/noise for short lowercase text. Fix: **capitalize + trailing period** (`"Bird."` → clean speech; `"bird"` → garbage). Multi-word sentences are fine as-is.
+- **Kokoro trailing artifact**: short clips get a trailing breath/burst (measured: energy re-rises to −24 dBFS after the word decays). Two fixes auditioned in `auditions/kokoro-fix-ab/`: trailing period (clean, prosody changes) or energy-trim at the silence dip. Pick one before word rendering.
+- **uv venvs** ship without pip/setuptools: chatterbox's `perth` watermarker needs `setuptools<81` (84+ removed `pkg_resources`) and kokoro's G2P needs `pip` + the `en_core_web_sm` wheel installed explicitly, else it shells out to `uv` mid-run and dies.
+- **curl downloads from HF** intermittently fail with exit 56 on this network — `huggingface_hub.hf_hub_download` retries and resumes reliably.
+- **Never host weights or build third-party CMake inside the repo** — a NeMo build wiped `data/` once. Everything lives in `~/.cache/` now.
+
 ## Setup quick reference
 
 ```bash
