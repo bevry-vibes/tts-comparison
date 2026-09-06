@@ -140,7 +140,14 @@
 <h3>Accent cloning via system-voice references</h3>
 <table>
 <tr><th>Reference voice</th><th>Play</th></tr>
-<tr><td class="engine">Higgs cloned from macOS Karen (AU F) — "Bird. Stop. The best sand in the land."</td><td><button class="play" data-src="higgs-karen-ref/clone-test">▶</button></td></tr><tr><td class="engine">Higgs cloned from macOS Damayanti (id-ID F) — "Kuda Bisa adalah kuda poni dari Sumba. Sumba bisa!"</td><td><button class="play" data-src="higgs-damayanti-ref/clone-test">▶</button></td></tr>
+<tr><td class="engine">Higgs cloned from macOS Karen (AU F) — "Bird. Stop. The best sand in the land."</td><td><button class="play" data-src="higgs-karen-ref/clone-test.mp3">▶</button></td></tr><tr><td class="engine">Higgs cloned from macOS Damayanti (id-ID F) — "Kuda Bisa adalah kuda poni dari Sumba. Sumba bisa!"</td><td><button class="play" data-src="higgs-damayanti-ref/clone-test.mp3">▶</button></td></tr>
+</table>
+
+<h2>9 · Phoneme sources — fixing the “phoneme-a-phoneme” sandwich</h2>
+<p class="note">The Commons recordings wrap each phoneme in a vowel sandwich (e.g. “ʃ-a-ʃ”), which you find annoying. Three fixes compared: extracting the clean first consonant from the sandwich (energy-dip cut, works for sustained sounds — fricatives/nasals; plosives keep their release), and alternate speaker takes from Commons (484 files in the phonetic-samples category; several <strong>public domain</strong>, the rest CC BY-SA — both license-compatible). The extraction is deterministic, so it can run over all 35 bundled recordings automatically if this direction wins.</p>
+<table>
+<tr><th>Source</th><th>Play</th></tr>
+<tr><td class="engine">ʃ — current app audio (the "ʃ-a-ʃ" sandwich)</td><td><button class="play" data-src="phoneme-sources/ʃ-original.mp3">▶</button></td></tr><tr><td class="engine">ʃ — extracted first consonant from the sandwich</td><td><button class="play" data-src="phoneme-sources/ʃ-extracted.mp3">▶</button></td></tr><tr><td class="engine">ʃ — alternate speaker take (Northern Latin Spanish, CC BY-SA 4.0)</td><td><button class="play" data-src="phoneme-sources/ʃ-spanish-alt.mp3">▶</button></td></tr><tr><td class="engine">θ — current app audio</td><td><button class="play" data-src="phoneme-sources/θ-original.mp3">▶</button></td></tr><tr><td class="engine">θ — extracted first consonant</td><td><button class="play" data-src="phoneme-sources/θ-extracted.mp3">▶</button></td></tr><tr><td class="engine">θ — alternate take (Spanish, Public domain)</td><td><button class="play" data-src="phoneme-sources/θ-spanish-pd.mp3">▶</button></td></tr><tr><td class="engine">s — extracted first consonant</td><td><button class="play" data-src="phoneme-sources/s-extracted.mp3">▶</button></td></tr><tr><td class="engine">f — extracted (source was already short — check for clipping)</td><td><button class="play" data-src="phoneme-sources/f-extracted.mp3">▶</button></td></tr><tr><td class="engine">m — extracted first consonant</td><td><button class="play" data-src="phoneme-sources/m-extracted.mp3">▶</button></td></tr>
 </table>
 </body>
 </html>
