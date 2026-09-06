@@ -58,6 +58,19 @@ Key finding for Sumba Bisa: **no open engine ships an Australian English voice**
 - **curl downloads from HF** intermittently fail with exit 56 on this network — `huggingface_hub.hf_hub_download` retries and resumes reliably.
 - **Never host weights or build third-party CMake inside the repo** — a NeMo build wiped `data/` once. Everything lives in `~/.cache/` now.
 
+## Phoneme input (the breakthrough)
+
+The app needs 41 isolated phoneme clips. The first phoneme test fed ASCII spellings ("shhh") — every engine pronounced the letters. Harness research (reading the installed sources, not guessing) found proper phoneme input:
+
+| Engine | Phoneme input | Evidence |
+| --- | --- | --- |
+| **Kokoro** | ✅ `KPipeline.generate_from_tokens('<IPA>')` — raw UTF-8 IPA direct to the vocoder, ≤510 chars (`kokoro/pipeline.py` in the pypi package) | All 13 test phonemes (ʃ θ s f m ɑː iː eɪ aɪ ɔɪ aʊ əʊ ɜː) generated and verified as structured speech — **including the five diphthongs that had been TTS-only fallbacks and the AU ɜː** |
+| **Piper** | ✅ `[[…]]` blocks in text → raw phonemes against the model's id map (piper1-gpl `voice.py`, `_PHONEME_BLOCK_PATTERN`) — this voice's map is IPA-flavoured (espeak-style `T` warns "missing from id map", IPA `ɑː` passes) | ʃ/S/θ/T/ɑː clips generated |
+| **Higgs v3** | ❌ no phoneme path — LLM tokenizer sees IPA as plain text and improvises | "ʃ" produced loud structured audio (improvised), rest n/a |
+| Breeze / Chatterbox / macOS | ❌ text only | — |
+
+Implication for Sumba Bisa: a **single Apache-2.0 Kokoro voice can render all 41 phonemes from IPA** consistently (with the same breath-trim post-processing), replacing the "real recordings + TTS fallback" split — pending the ear verdict on quality vs the Commons recordings.
+
 ## Setup quick reference
 
 ```bash
