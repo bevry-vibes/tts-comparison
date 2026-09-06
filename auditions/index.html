@@ -129,5 +129,18 @@
 <tr><td class="engine">Higgs v3 (plain text "ʃ" — improvised)</td><td><button class="play" data-src="phonemes-ipa/higgs-default/ʃ.mp3">▶</button></td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td></tr>
 <tr><td class="engine">Reference — real Commons recordings</td><td><button class="play" data-src="phonemes-ipa/reference-real/ʃ.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/reference-real/θ.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/reference-real/s.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/reference-real/f.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/reference-real/m.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/reference-real/ɑː.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/reference-real/iː.mp3">▶</button></td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td></tr>
 </table>
+
+<h2>8 · Higgs deep-dive — config variations & accent cloning</h2>
+<p class="note">Your favourite engine, explored. mlx-audio exposes sampling knobs (<code>--speed --temperature --cfg_scale</code>), and Higgs v3's Python API takes reference audio — so macOS system voices were fed in as cloning references to steer its accent (Karen for Australian English, Damayanti for Indonesian). Voice cloning uses system-voice output as reference — personal-use territory; note the non-commercial model license.</p>
+<h3>Config variations — "The best sand in the land."</h3>
+<table>
+<tr><th>Setting</th><th>Play</th></tr>
+<tr><td class="engine">speed 0.8×</td><td><button class="play" data-src="higgs-config/speed-08.mp3">▶</button></td></tr><tr><td class="engine">speed 1.2×</td><td><button class="play" data-src="higgs-config/speed-12.mp3">▶</button></td></tr><tr><td class="engine">temperature 0.3 (steady)</td><td><button class="play" data-src="higgs-config/temp-03.mp3">▶</button></td></tr><tr><td class="engine">temperature 0.9 (expressive)</td><td><button class="play" data-src="higgs-config/temp-09.mp3">▶</button></td></tr><tr><td class="engine">cfg_scale 5 (stronger guidance)</td><td><button class="play" data-src="higgs-config/cfg-5.mp3">▶</button></td></tr>
+</table>
+<h3>Accent cloning via system-voice references</h3>
+<table>
+<tr><th>Reference voice</th><th>Play</th></tr>
+<tr><td class="engine">Higgs cloned from macOS Karen (AU F) — "Bird. Stop. The best sand in the land."</td><td><button class="play" data-src="higgs-karen-ref/clone-test">▶</button></td></tr><tr><td class="engine">Higgs cloned from macOS Damayanti (id-ID F) — "Kuda Bisa adalah kuda poni dari Sumba. Sumba bisa!"</td><td><button class="play" data-src="higgs-damayanti-ref/clone-test">▶</button></td></tr>
+</table>
 </body>
 </html>
