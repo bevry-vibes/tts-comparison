@@ -35,6 +35,7 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 </table>
 
 
+
 <h2>A2 · English voices — full sample set (8 texts)</h2>
 <p class="note">Adds <span class="text">“vision”</span> (/ʒ/), <span class="text">“about”</span> (schwa), <span class="text">“the”</span> (weak form), <span class="text">“kite”</span> (magic e) — the phonetic traps the app teaches.</p>
 <table id="full-en">
@@ -46,6 +47,7 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">Piper alan-medium (UK M)</td><td><button class="play" data-src="piper-alan-medium/vision.mp3">▶</button></td><td><button class="play" data-src="piper-alan-medium/about.mp3">▶</button></td><td><button class="play" data-src="piper-alan-medium/the.mp3">▶</button></td><td><button class="play" data-src="piper-alan-medium/kite.mp3">▶</button></td><td><button class="play" data-src="piper-alan-medium/bird.mp3">▶</button></td><td><button class="play" data-src="piper-alan-medium/stop.mp3">▶</button></td><td><button class="play" data-src="piper-alan-medium/sentence.mp3">▶</button></td><td><button class="play" data-src="piper-alan-medium/sumba.mp3">▶</button></td></tr>
 <tr><td class="engine">Chatterbox default</td><td><button class="play" data-src="chatterbox-default/vision.mp3">▶</button></td><td><button class="play" data-src="chatterbox-default/about.mp3">▶</button></td><td><button class="play" data-src="chatterbox-default/the.mp3">▶</button></td><td><button class="play" data-src="chatterbox-default/kite.mp3">▶</button></td><td><button class="play" data-src="chatterbox-default/bird.mp3">▶</button></td><td><button class="play" data-src="chatterbox-default/stop.mp3">▶</button></td><td><button class="play" data-src="chatterbox-default/sentence.mp3">▶</button></td><td><button class="play" data-src="chatterbox-default/sumba.mp3">▶</button></td></tr>
 </table>
+
 
 
 <h2>B · Word render — Higgs v3 vs the current Piper (all 194 dictionary words)</h2>
@@ -249,6 +251,7 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 </table>
 
 
+
 <h2>C · Bahasa Indonesia — every available voice in one table</h2>
 <p class="note">Standard Indonesian only — no open engine offers Indonesian "dialects"; Javanese (MMS-tts-jav) is the closest regional sample. <strong>Sumbanese (MMS-tts-kdb) exists but is gated — needs a Hugging Face token.</strong> The app currently uses Higgs and macOS Damayanti for its Indonesian speech.</p>
 <table>
@@ -264,12 +267,16 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">Meta MMS-tts-jav (Javanese)</td><td class="text">Sugeng rawuh! Kula matur nuwun.</td><td><button class="play" data-src="indonesian/mms-jav/jav-sentence.mp3">▶</button></td></tr>
 <tr><td class="engine">Meta MMS-tts-jav (Javanese)</td><td class="text">Kuda Sumba menika menarik sanget.</td><td><button class="play" data-src="indonesian/mms-jav/jav-sumba.mp3">▶</button></td></tr>
 </table>
+
+
 <h2>D · Phoneme library — every option per phoneme</h2>
 <p class="note">For each of the 35 bundled phonemes: the current recording, the extracted isolated take (cut from the "ʃ-a-ʃ" sandwich — plosives keep closure+release; sonorants keep their murmur), and every vetted Commons alternate (license · artist). Judge by ear; winners get wired into the app with attribution.</p>
 <table>
-<tr><th colspan="3">p — 2 options</th></tr>
+<tr><th colspan="3">p — 4 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless bilabial plosive.ogg</td><td><button class="play" data-src="phoneme-library/p-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.43s</td><td><button class="play" data-src="phoneme-library/p-extracted.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 1 — Oclusiva bilabial sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/p-cat0.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 2 — Voiceless bilabial stop.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/p-cat1.mp3">▶</button></td></tr>
 <tr><th colspan="3">b — 9 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced bilabial plosive.ogg</td><td><button class="play" data-src="phoneme-library/b-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.22s</td><td><button class="play" data-src="phoneme-library/b-extracted.mp3">▶</button></td></tr>
@@ -280,7 +287,7 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">alternate 5 — Creaky-voiced glottal approximant.wav</td><td class="text">CC0 · Eshaan011</td><td><button class="play" data-src="phoneme-library/b-alt4.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 6 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/b-alt5.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 7 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/b-alt6.mp3">▶</button></td></tr>
-<tr><th colspan="3">t — 9 options</th></tr>
+<tr><th colspan="3">t — 11 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless alveolar plosive.ogg</td><td><button class="play" data-src="phoneme-library/t-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.23s</td><td><button class="play" data-src="phoneme-library/t-extracted.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 1 — Alveolar approximant.ogg</td><td class="text">CC BY-SA 3.0 · Erutuon</td><td><button class="play" data-src="phoneme-library/t-alt80.mp3">▶</button></td></tr>
@@ -290,6 +297,8 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">alternate 5 — 13-12-22 voiceless palatal fricative.ogg</td><td class="text">CC BY-SA 3.0 · Edralis</td><td><button class="play" data-src="phoneme-library/t-alt0.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 6 — Aspirated voiceless alveolar stop.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/t-alt5.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 7 — Aspirated voiceless bilabial stop.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/t-alt6.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 8 — Voiceless alveolar stop.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/t-cat0.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 9 — Voiceless labial-alveolar plosive.ogg</td><td class="text">CC BY 3.0 · 1tslmn2015</td><td><button class="play" data-src="phoneme-library/t-cat1.mp3">▶</button></td></tr>
 <tr><th colspan="3">d — 12 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced alveolar plosive.ogg</td><td><button class="play" data-src="phoneme-library/d-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.24s</td><td><button class="play" data-src="phoneme-library/d-extracted.mp3">▶</button></td></tr>
@@ -303,7 +312,7 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">alternate 8 — Voiced alveolar non-sibilant fricative.ogg</td><td class="text">CC BY-SA 4.0 · Ajho24</td><td><button class="play" data-src="phoneme-library/d-alt14.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 9 — Voiced alveolar sibilant affricate.oga</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/d-alt15.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 10 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/d-alt16.mp3">▶</button></td></tr>
-<tr><th colspan="3">k — 8 options</th></tr>
+<tr><th colspan="3">k — 10 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless velar plosive.ogg</td><td><button class="play" data-src="phoneme-library/k-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.24s</td><td><button class="play" data-src="phoneme-library/k-extracted.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 1 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/k-alt61.mp3">▶</button></td></tr>
@@ -312,7 +321,9 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">alternate 4 — Labial-velar nasal stop.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/k-alt66.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/k-alt68.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 6 — Nasal velar.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/k-alt8.mp3">▶</button></td></tr>
-<tr><th colspan="3">g — 10 options</th></tr>
+<tr><td class="engine">alternate 7 — Oclusiva velar sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/k-cat0.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 8 — Voiceless labial-velar plosive.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/k-cat1.mp3">▶</button></td></tr>
+<tr><th colspan="3">g — 16 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced velar plosive.ogg</td><td><button class="play" data-src="phoneme-library/g-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.24s</td><td><button class="play" data-src="phoneme-library/g-extracted.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-alt24.mp3">▶</button></td></tr>
@@ -323,7 +334,13 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">alternate 6 — Voiced alveolar non-sibilant fricative.ogg</td><td class="text">CC BY-SA 4.0 · Ajho24</td><td><button class="play" data-src="phoneme-library/g-alt31.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 7 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-alt33.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 8 — Prenasalized voiced velar plosive.ogg</td><td class="text">CC BY 2.5 · unknown</td><td><button class="play" data-src="phoneme-library/g-new0.mp3">▶</button></td></tr>
-<tr><th colspan="3">f — 9 options</th></tr>
+<tr><td class="engine">alternate 9 — Oclusiva velar sonora.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/g-cat0.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 10 — PR-voiced velar stop.ogg</td><td class="text">CC BY-SA 4.0 · RoachPeter</td><td><button class="play" data-src="phoneme-library/g-cat1.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 11 — Voiced labial-velar plosive.ogg</td><td class="text">CC BY 2.5 · No machine-readable author provided. Moyogo assumed (based on copyright claims).</td><td><button class="play" data-src="phoneme-library/g-cat2.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 12 — Voiced labial-velar plosive1.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/g-cat3.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 13 — Voiced velar plosive 02.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-cat4.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 14 — Voiced velar stop.ogg</td><td class="text">CC BY-SA 3.0 · Britannic124</td><td><button class="play" data-src="phoneme-library/g-cat5.mp3">▶</button></td></tr>
+<tr><th colspan="3">f — 11 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless labiodental fricative.ogg</td><td><button class="play" data-src="phoneme-library/f-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.26s</td><td><button class="play" data-src="phoneme-library/f-extracted.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/f-alt18.mp3">▶</button></td></tr>
@@ -333,6 +350,8 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/f-alt23.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 6 — Dental ejective fricative.ogg</td><td class="text">CC BY-SA 3.0 · Adamsa123</td><td><button class="play" data-src="phoneme-library/f-alt7.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 7 — PR-voiceless labiodental fricative.ogg</td><td class="text">CC BY-SA 4.0 · RoachPeter</td><td><button class="play" data-src="phoneme-library/f-new0.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 8 — Fricativa labiodental sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/f-cat0.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 9 — Fricative labio-dentale éjective.ogg</td><td class="text">CC BY-SA 3.0 · Original uploader was Vincent Ramos at fr.wikipedia</td><td><button class="play" data-src="phoneme-library/f-cat1.mp3">▶</button></td></tr>
 <tr><th colspan="3">v — 9 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced labiodental fricative.ogg</td><td><button class="play" data-src="phoneme-library/v-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.66s</td><td><button class="play" data-src="phoneme-library/v-extracted.mp3">▶</button></td></tr>
@@ -343,7 +362,7 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">alternate 5 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/v-alt104.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 6 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/v-alt105.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 7 — PR-voiced labiodental fricative.ogg</td><td class="text">CC BY-SA 4.0 · RoachPeter</td><td><button class="play" data-src="phoneme-library/v-new0.mp3">▶</button></td></tr>
-<tr><th colspan="3">θ — 7 options</th></tr>
+<tr><th colspan="3">θ — 8 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless dental fricative.ogg</td><td><button class="play" data-src="phoneme-library/θ-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.49s</td><td><button class="play" data-src="phoneme-library/θ-extracted.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/θ-alt187.mp3">▶</button></td></tr>
@@ -351,6 +370,7 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/θ-alt189.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 4 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/θ-alt192.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 5 — Voiceless Dental Fricative.ogg</td><td class="text">CC0 · HuiXingMusic</td><td><button class="play" data-src="phoneme-library/θ-new0.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 6 — Fricativa interdental sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/θ-cat0.mp3">▶</button></td></tr>
 <tr><th colspan="3">ð — 9 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced dental fricative.ogg</td><td><button class="play" data-src="phoneme-library/ð-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.73s</td><td><button class="play" data-src="phoneme-library/ð-extracted.mp3">▶</button></td></tr>
@@ -361,27 +381,33 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">alternate 5 — Voiced alveolar lateral affricate.ogg</td><td class="text">CC BY-SA 3.0 · Adamsa123</td><td><button class="play" data-src="phoneme-library/ð-alt113.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 6 — Voiced alveolar non-sibilant fricative.ogg</td><td class="text">CC BY-SA 4.0 · Ajho24</td><td><button class="play" data-src="phoneme-library/ð-alt114.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 7 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ð-alt116.mp3">▶</button></td></tr>
-<tr><th colspan="3">s — 2 options</th></tr>
+<tr><th colspan="3">s — 3 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless alveolar sibilant.ogg</td><td><button class="play" data-src="phoneme-library/s-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.57s</td><td><button class="play" data-src="phoneme-library/s-extracted.mp3">▶</button></td></tr>
-<tr><th colspan="3">z — 2 options</th></tr>
+<tr><td class="engine">alternate 1 — Fricativa alveolar sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/s-cat0.mp3">▶</button></td></tr>
+<tr><th colspan="3">z — 3 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced alveolar sibilant.ogg</td><td><button class="play" data-src="phoneme-library/z-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.82s</td><td><button class="play" data-src="phoneme-library/z-extracted.mp3">▶</button></td></tr>
-<tr><th colspan="3">ʃ — 3 options</th></tr>
+<tr><td class="engine">alternate 1 — Fricativa alveolar sonorizada.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/z-cat0.mp3">▶</button></td></tr>
+<tr><th colspan="3">ʃ — 4 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless palato-alveolar sibilant.ogg</td><td><button class="play" data-src="phoneme-library/ʃ-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.72s</td><td><button class="play" data-src="phoneme-library/ʃ-extracted.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 1 — Echador Voiceless palato-alveolar sibilant Northern Latin Spanish.wav</td><td class="text">CC BY-SA 4.0 · Saikoispro</td><td><button class="play" data-src="phoneme-library/ʃ-new0.mp3">▶</button></td></tr>
-<tr><th colspan="3">ʒ — 2 options</th></tr>
+<tr><td class="engine">alternate 2 — Fricativa postalveolar sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/ʃ-cat0.mp3">▶</button></td></tr>
+<tr><th colspan="3">ʒ — 3 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced palato-alveolar sibilant.ogg</td><td><button class="play" data-src="phoneme-library/ʒ-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.71s</td><td><button class="play" data-src="phoneme-library/ʒ-extracted.mp3">▶</button></td></tr>
-<tr><th colspan="3">tʃ — 3 options</th></tr>
+<tr><td class="engine">alternate 1 — Fricativa postalveolar sonorizada.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/ʒ-cat0.mp3">▶</button></td></tr>
+<tr><th colspan="3">tʃ — 4 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless palato-alveolar affricate.ogg</td><td><button class="play" data-src="phoneme-library/tʃ-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.33s</td><td><button class="play" data-src="phoneme-library/tʃ-extracted.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 1 — Chocolate Voiceless palato-alveolar affricate Latin Spanish.wav</td><td class="text">CC BY-SA 4.0 · Saikoispro</td><td><button class="play" data-src="phoneme-library/tʃ-new0.mp3">▶</button></td></tr>
-<tr><th colspan="3">dʒ — 3 options</th></tr>
+<tr><td class="engine">alternate 2 — Africada postalveolar sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/tʃ-cat0.mp3">▶</button></td></tr>
+<tr><th colspan="3">dʒ — 4 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced palato-alveolar affricate.ogg</td><td><button class="play" data-src="phoneme-library/dʒ-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.17s</td><td><button class="play" data-src="phoneme-library/dʒ-extracted.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 1 — Voiced palato-alveolar affricate pronunciation.oga</td><td class="text">CC BY-SA 4.0 · XxXsuperprobablymanXxX</td><td><button class="play" data-src="phoneme-library/dʒ-new0.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 2 — Africada postalveolar sonora.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/dʒ-cat0.mp3">▶</button></td></tr>
 <tr><th colspan="3">h — 7 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless glottal fricative.ogg</td><td><button class="play" data-src="phoneme-library/h-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.81s</td><td><button class="play" data-src="phoneme-library/h-extracted.mp3">▶</button></td></tr>
@@ -403,7 +429,7 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Velar nasal.ogg</td><td><button class="play" data-src="phoneme-library/ŋ-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.76s</td><td><button class="play" data-src="phoneme-library/ŋ-extracted.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 1 — Labial-velar nasal stop.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/ŋ-alt117.mp3">▶</button></td></tr>
-<tr><th colspan="3">l — 7 options</th></tr>
+<tr><th colspan="3">l — 11 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Alveolar lateral approximant.ogg</td><td><button class="play" data-src="phoneme-library/l-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.83s</td><td><button class="play" data-src="phoneme-library/l-extracted.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 1 — Alveolar approximant.ogg</td><td class="text">CC BY-SA 3.0 · Erutuon</td><td><button class="play" data-src="phoneme-library/l-alt69.mp3">▶</button></td></tr>
@@ -411,6 +437,10 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">alternate 3 — Palatal lateral approximant - SK.ogg</td><td class="text">CC BY-SA 3.0 · Edralis</td><td><button class="play" data-src="phoneme-library/l-alt2.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 4 — Postalveolar approximant.ogg</td><td class="text">CC BY-SA 3.0 · Peter Isotalo</td><td><button class="play" data-src="phoneme-library/l-alt3.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 5 — Voiceless alveolar approximant.ogg</td><td class="text">CC BY-SA 4.0 · NoahKuhn9</td><td><button class="play" data-src="phoneme-library/l-alt4.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 6 — Lateral dental.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/l-cat0.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 7 — Lateral palatal.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/l-cat1.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 8 — Velar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/l-cat2.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 9 — Voiced dental lateral approximant.ogg</td><td class="text">CC BY-SA 4.0 · YodaMaster445</td><td><button class="play" data-src="phoneme-library/l-cat3.mp3">▶</button></td></tr>
 <tr><th colspan="3">r — 5 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Alveolar approximant.ogg</td><td><button class="play" data-src="phoneme-library/r-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.15s</td><td><button class="play" data-src="phoneme-library/r-extracted.mp3">▶</button></td></tr>
@@ -420,7 +450,7 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><th colspan="3">w — 2 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced labio-velar approximant.ogg</td><td><button class="play" data-src="phoneme-library/w-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.69s</td><td><button class="play" data-src="phoneme-library/w-extracted.mp3">▶</button></td></tr>
-<tr><th colspan="3">j — 8 options</th></tr>
+<tr><th colspan="3">j — 9 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Palatal approximant.ogg</td><td><button class="play" data-src="phoneme-library/j-current.mp3">▶</button></td></tr>
 <tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.77s</td><td><button class="play" data-src="phoneme-library/j-extracted.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 1 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/j-alt51.mp3">▶</button></td></tr>
@@ -429,6 +459,7 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">alternate 4 — Creaky-voiced glottal approximant.wav</td><td class="text">CC0 · Eshaan011</td><td><button class="play" data-src="phoneme-library/j-alt56.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 5 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/j-alt59.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 6 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/j-alt60.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 7 — Aproximante palatal.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/j-cat0.mp3">▶</button></td></tr>
 <tr><th colspan="3">iː — 7 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Close front unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/iː-current.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/iː-alt42.mp3">▶</button></td></tr>
@@ -498,7 +529,7 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/uː-alt88.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 4 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/uː-alt94.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/uː-alt95.mp3">▶</button></td></tr>
-<tr><th colspan="3">ə — 9 options</th></tr>
+<tr><th colspan="3">ə — 10 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Mid-central vowel.ogg</td><td><button class="play" data-src="phoneme-library/ə-current.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ə-alt139.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ə-alt140.mp3">▶</button></td></tr>
@@ -509,6 +540,7 @@ One-time engine tests (Kokoro artifact A/B, breath A/B, IPA input, Higgs deep-di
 <tr><td class="engine">alternate 7 — LL-Q150 (fra)-WikiLucas00-schwa.wav</td><td class="text">CC BY-SA 4.0 · Speaker: WikiLucas00
 Recorder: WikiLucas00</td><td><button class="play" data-src="phoneme-library/ə-new0.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 8 — Schwa.ogg</td><td class="text">CC BY-SA 3.0 · No machine-readable author provided. Denelson83 assumed (based on copyright claims).</td><td><button class="play" data-src="phoneme-library/ə-new0.mp3">▶</button></td></tr>
+<tr><td class="engine">alternate 9 — Schwa.wav</td><td class="text">CC BY-SA 4.0 · UofG Language Modules</td><td><button class="play" data-src="phoneme-library/ə-cat0.mp3">▶</button></td></tr>
 <tr><th colspan="3">ɝ — 8 options</th></tr>
 <tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Open-mid central unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/ɝ-current.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɝ-alt147.mp3">▶</button></td></tr>
@@ -519,7 +551,6 @@ Recorder: WikiLucas00</td><td><button class="play" data-src="phoneme-library/ə-
 <tr><td class="engine">alternate 6 — Regular and r-colored vowels.ogg</td><td class="text">CC BY-SA 3.0 · No machine-readable author provided. Denelson83 assumed (based on copyright claims).</td><td><button class="play" data-src="phoneme-library/ɝ-new0.mp3">▶</button></td></tr>
 <tr><td class="engine">alternate 7 — En-us-R-coloured vowel.ogg</td><td class="text">CC BY-SA 4.0 · Persent101</td><td><button class="play" data-src="phoneme-library/ɝ-new1.mp3">▶</button></td></tr>
 </table>
-
 
 <h2>E · Historical references — the classical phonetics records (78rpm, public domain digitizations)</h2>
 <p class="note">The archive.org Great 78 Project: <strong>Prof. A. Lloyd James</strong> (BBC advisory pronunciation officer) demonstrating "ENGLISH SOUNDS" (1930) and a "Broadcast English" lesson, plus <strong>Prof. Daniel Jones</strong> — author of the classic <em>An Outline of English Phonetics</em> — reading early 17th-century English. Not phoneme drills, but the actual classical-education artifacts for the sounds we teach, and a reference for "how an old-school phonetician sounds".</p>
@@ -530,572 +561,33 @@ Recorder: WikiLucas00</td><td><button class="play" data-src="phoneme-library/ə-
 <tr><td class="engine">Pronunciation of Early XVIIth-Century English No. 5 — Prof. Daniel Jones (78rpm)</td><td><button class="play" data-src="historical/daniel-jones-xvii-english-5.mp3">▶</button></td></tr>
 <tr><td class="engine">Pronunciation of Early XVIIth-Century English No. 6 — Prof. Daniel Jones (78rpm)</td><td><button class="play" data-src="historical/daniel-jones-xvii-english-6.mp3">▶</button></td></tr>
 </table>
-<h2>11 · Phoneme library — every option per phoneme</h2>
-<p class="note">For each of the 35 bundled phonemes: the current recording, the extracted isolated take (cut from the "ʃ-a-ʃ" sandwich — plosives keep closure+release; sonorants keep their murmur), and every vetted Commons alternate (license · artist). Judge by ear; winners get wired into the app with attribution.</p>
-<table>
-<tr><th colspan="3">p — 4 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless bilabial plosive.ogg</td><td><button class="play" data-src="phoneme-library/p-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.43s</td><td><button class="play" data-src="phoneme-library/p-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Oclusiva bilabial sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/p-cat0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Voiceless bilabial stop.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/p-cat1.mp3">▶</button></td></tr>
-<tr><th colspan="3">b — 9 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced bilabial plosive.ogg</td><td><button class="play" data-src="phoneme-library/b-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.22s</td><td><button class="play" data-src="phoneme-library/b-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/b-alt0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/b-alt1.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/b-alt2.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/b-alt3.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Creaky-voiced glottal approximant.wav</td><td class="text">CC0 · Eshaan011</td><td><button class="play" data-src="phoneme-library/b-alt4.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/b-alt5.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/b-alt6.mp3">▶</button></td></tr>
-<tr><th colspan="3">t — 11 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless alveolar plosive.ogg</td><td><button class="play" data-src="phoneme-library/t-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.23s</td><td><button class="play" data-src="phoneme-library/t-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar approximant.ogg</td><td class="text">CC BY-SA 3.0 · Erutuon</td><td><button class="play" data-src="phoneme-library/t-alt80.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/t-alt81.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/t-alt84.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Labial-velar nasal stop.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/t-alt85.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — 13-12-22 voiceless palatal fricative.ogg</td><td class="text">CC BY-SA 3.0 · Edralis</td><td><button class="play" data-src="phoneme-library/t-alt0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Aspirated voiceless alveolar stop.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/t-alt5.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Aspirated voiceless bilabial stop.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/t-alt6.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — Voiceless alveolar stop.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/t-cat0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 9 — Voiceless labial-alveolar plosive.ogg</td><td class="text">CC BY 3.0 · 1tslmn2015</td><td><button class="play" data-src="phoneme-library/t-cat1.mp3">▶</button></td></tr>
-<tr><th colspan="3">d — 12 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced alveolar plosive.ogg</td><td><button class="play" data-src="phoneme-library/d-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.24s</td><td><button class="play" data-src="phoneme-library/d-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar approximant.ogg</td><td class="text">CC BY-SA 3.0 · Erutuon</td><td><button class="play" data-src="phoneme-library/d-alt7.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/d-alt8.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/d-alt9.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/d-alt10.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/d-alt11.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Labial-velar nasal stop.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/d-alt12.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Voiced alveolar lateral affricate.ogg</td><td class="text">CC BY-SA 3.0 · Adamsa123</td><td><button class="play" data-src="phoneme-library/d-alt13.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — Voiced alveolar non-sibilant fricative.ogg</td><td class="text">CC BY-SA 4.0 · Ajho24</td><td><button class="play" data-src="phoneme-library/d-alt14.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 9 — Voiced alveolar sibilant affricate.oga</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/d-alt15.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 10 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/d-alt16.mp3">▶</button></td></tr>
-<tr><th colspan="3">k — 10 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless velar plosive.ogg</td><td><button class="play" data-src="phoneme-library/k-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.24s</td><td><button class="play" data-src="phoneme-library/k-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/k-alt61.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/k-alt62.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/k-alt65.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Labial-velar nasal stop.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/k-alt66.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/k-alt68.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Nasal velar.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/k-alt8.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Oclusiva velar sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/k-cat0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — Voiceless labial-velar plosive.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/k-cat1.mp3">▶</button></td></tr>
-<tr><th colspan="3">g — 16 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced velar plosive.ogg</td><td><button class="play" data-src="phoneme-library/g-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.24s</td><td><button class="play" data-src="phoneme-library/g-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-alt24.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-alt25.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-alt26.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-alt29.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Labial-velar nasal stop.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/g-alt30.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiced alveolar non-sibilant fricative.ogg</td><td class="text">CC BY-SA 4.0 · Ajho24</td><td><button class="play" data-src="phoneme-library/g-alt31.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-alt33.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — Prenasalized voiced velar plosive.ogg</td><td class="text">CC BY 2.5 · unknown</td><td><button class="play" data-src="phoneme-library/g-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 9 — Oclusiva velar sonora.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/g-cat0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 10 — PR-voiced velar stop.ogg</td><td class="text">CC BY-SA 4.0 · RoachPeter</td><td><button class="play" data-src="phoneme-library/g-cat1.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 11 — Voiced labial-velar plosive.ogg</td><td class="text">CC BY 2.5 · No machine-readable author provided. Moyogo assumed (based on copyright claims).</td><td><button class="play" data-src="phoneme-library/g-cat2.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 12 — Voiced labial-velar plosive1.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/g-cat3.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 13 — Voiced velar plosive 02.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-cat4.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 14 — Voiced velar stop.ogg</td><td class="text">CC BY-SA 3.0 · Britannic124</td><td><button class="play" data-src="phoneme-library/g-cat5.mp3">▶</button></td></tr>
-<tr><th colspan="3">f — 11 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless labiodental fricative.ogg</td><td><button class="play" data-src="phoneme-library/f-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.26s</td><td><button class="play" data-src="phoneme-library/f-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/f-alt18.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/f-alt19.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/f-alt20.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/f-alt21.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/f-alt23.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Dental ejective fricative.ogg</td><td class="text">CC BY-SA 3.0 · Adamsa123</td><td><button class="play" data-src="phoneme-library/f-alt7.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — PR-voiceless labiodental fricative.ogg</td><td class="text">CC BY-SA 4.0 · RoachPeter</td><td><button class="play" data-src="phoneme-library/f-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — Fricativa labiodental sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/f-cat0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 9 — Fricative labio-dentale éjective.ogg</td><td class="text">CC BY-SA 3.0 · Original uploader was Vincent Ramos at fr.wikipedia</td><td><button class="play" data-src="phoneme-library/f-cat1.mp3">▶</button></td></tr>
-<tr><th colspan="3">v — 9 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced labiodental fricative.ogg</td><td><button class="play" data-src="phoneme-library/v-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.66s</td><td><button class="play" data-src="phoneme-library/v-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/v-alt97.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/v-alt98.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/v-alt99.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Voiced alveolar non-sibilant fricative.ogg</td><td class="text">CC BY-SA 4.0 · Ajho24</td><td><button class="play" data-src="phoneme-library/v-alt102.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/v-alt104.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/v-alt105.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — PR-voiced labiodental fricative.ogg</td><td class="text">CC BY-SA 4.0 · RoachPeter</td><td><button class="play" data-src="phoneme-library/v-new0.mp3">▶</button></td></tr>
-<tr><th colspan="3">θ — 8 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless dental fricative.ogg</td><td><button class="play" data-src="phoneme-library/θ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.49s</td><td><button class="play" data-src="phoneme-library/θ-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/θ-alt187.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/θ-alt188.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/θ-alt189.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/θ-alt192.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless Dental Fricative.ogg</td><td class="text">CC0 · HuiXingMusic</td><td><button class="play" data-src="phoneme-library/θ-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Fricativa interdental sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/θ-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">ð — 9 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced dental fricative.ogg</td><td><button class="play" data-src="phoneme-library/ð-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.73s</td><td><button class="play" data-src="phoneme-library/ð-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ð-alt107.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ð-alt108.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ð-alt109.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Creaky-voiced glottal approximant.wav</td><td class="text">CC0 · Eshaan011</td><td><button class="play" data-src="phoneme-library/ð-alt111.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiced alveolar lateral affricate.ogg</td><td class="text">CC BY-SA 3.0 · Adamsa123</td><td><button class="play" data-src="phoneme-library/ð-alt113.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiced alveolar non-sibilant fricative.ogg</td><td class="text">CC BY-SA 4.0 · Ajho24</td><td><button class="play" data-src="phoneme-library/ð-alt114.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ð-alt116.mp3">▶</button></td></tr>
-<tr><th colspan="3">s — 3 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless alveolar sibilant.ogg</td><td><button class="play" data-src="phoneme-library/s-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.57s</td><td><button class="play" data-src="phoneme-library/s-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Fricativa alveolar sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/s-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">z — 3 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced alveolar sibilant.ogg</td><td><button class="play" data-src="phoneme-library/z-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.82s</td><td><button class="play" data-src="phoneme-library/z-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Fricativa alveolar sonorizada.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/z-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">ʃ — 4 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless palato-alveolar sibilant.ogg</td><td><button class="play" data-src="phoneme-library/ʃ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.72s</td><td><button class="play" data-src="phoneme-library/ʃ-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Echador Voiceless palato-alveolar sibilant Northern Latin Spanish.wav</td><td class="text">CC BY-SA 4.0 · Saikoispro</td><td><button class="play" data-src="phoneme-library/ʃ-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Fricativa postalveolar sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/ʃ-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">ʒ — 3 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced palato-alveolar sibilant.ogg</td><td><button class="play" data-src="phoneme-library/ʒ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.71s</td><td><button class="play" data-src="phoneme-library/ʒ-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Fricativa postalveolar sonorizada.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/ʒ-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">tʃ — 4 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless palato-alveolar affricate.ogg</td><td><button class="play" data-src="phoneme-library/tʃ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.33s</td><td><button class="play" data-src="phoneme-library/tʃ-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Chocolate Voiceless palato-alveolar affricate Latin Spanish.wav</td><td class="text">CC BY-SA 4.0 · Saikoispro</td><td><button class="play" data-src="phoneme-library/tʃ-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Africada postalveolar sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/tʃ-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">dʒ — 4 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced palato-alveolar affricate.ogg</td><td><button class="play" data-src="phoneme-library/dʒ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.17s</td><td><button class="play" data-src="phoneme-library/dʒ-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Voiced palato-alveolar affricate pronunciation.oga</td><td class="text">CC BY-SA 4.0 · XxXsuperprobablymanXxX</td><td><button class="play" data-src="phoneme-library/dʒ-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Africada postalveolar sonora.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/dʒ-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">h — 7 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless glottal fricative.ogg</td><td><button class="play" data-src="phoneme-library/h-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.81s</td><td><button class="play" data-src="phoneme-library/h-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/h-alt35.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/h-alt36.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/h-alt37.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/h-alt40.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/h-alt41.mp3">▶</button></td></tr>
-<tr><th colspan="3">m — 3 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Bilabial nasal.ogg</td><td><button class="play" data-src="phoneme-library/m-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.76s</td><td><button class="play" data-src="phoneme-library/m-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Labial-velar nasal stop.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/m-alt72.mp3">▶</button></td></tr>
-<tr><th colspan="3">n — 4 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Alveolar nasal.ogg</td><td><button class="play" data-src="phoneme-library/n-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.77s</td><td><button class="play" data-src="phoneme-library/n-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Voiced denti-alveolar nasal.wav</td><td class="text">CC BY 4.0 · Voicedbilabialtrill</td><td><button class="play" data-src="phoneme-library/n-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Voiced palato alveolar nasal.ogg</td><td class="text">CC BY 4.0 · RockyWikiSantali</td><td><button class="play" data-src="phoneme-library/n-new1.mp3">▶</button></td></tr>
-<tr><th colspan="3">ŋ — 3 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Velar nasal.ogg</td><td><button class="play" data-src="phoneme-library/ŋ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.76s</td><td><button class="play" data-src="phoneme-library/ŋ-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Labial-velar nasal stop.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/ŋ-alt117.mp3">▶</button></td></tr>
-<tr><th colspan="3">l — 11 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Alveolar lateral approximant.ogg</td><td><button class="play" data-src="phoneme-library/l-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.83s</td><td><button class="play" data-src="phoneme-library/l-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar approximant.ogg</td><td class="text">CC BY-SA 3.0 · Erutuon</td><td><button class="play" data-src="phoneme-library/l-alt69.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Creaky-voiced glottal approximant.wav</td><td class="text">CC0 · Eshaan011</td><td><button class="play" data-src="phoneme-library/l-alt70.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Palatal lateral approximant - SK.ogg</td><td class="text">CC BY-SA 3.0 · Edralis</td><td><button class="play" data-src="phoneme-library/l-alt2.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Postalveolar approximant.ogg</td><td class="text">CC BY-SA 3.0 · Peter Isotalo</td><td><button class="play" data-src="phoneme-library/l-alt3.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar approximant.ogg</td><td class="text">CC BY-SA 4.0 · NoahKuhn9</td><td><button class="play" data-src="phoneme-library/l-alt4.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Lateral dental.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/l-cat0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Lateral palatal.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/l-cat1.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — Velar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/l-cat2.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 9 — Voiced dental lateral approximant.ogg</td><td class="text">CC BY-SA 4.0 · YodaMaster445</td><td><button class="play" data-src="phoneme-library/l-cat3.mp3">▶</button></td></tr>
-<tr><th colspan="3">r — 5 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Alveolar approximant.ogg</td><td><button class="play" data-src="phoneme-library/r-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.15s</td><td><button class="play" data-src="phoneme-library/r-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/r-alt74.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Creaky-voiced glottal approximant.wav</td><td class="text">CC0 · Eshaan011</td><td><button class="play" data-src="phoneme-library/r-alt75.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Retroflex approximant.ogg</td><td class="text">CC BY-SA 3.0 · Karmosin</td><td><button class="play" data-src="phoneme-library/r-new0.mp3">▶</button></td></tr>
-<tr><th colspan="3">w — 2 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced labio-velar approximant.ogg</td><td><button class="play" data-src="phoneme-library/w-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.69s</td><td><button class="play" data-src="phoneme-library/w-extracted.mp3">▶</button></td></tr>
-<tr><th colspan="3">j — 9 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Palatal approximant.ogg</td><td><button class="play" data-src="phoneme-library/j-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.77s</td><td><button class="play" data-src="phoneme-library/j-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/j-alt51.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/j-alt52.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/j-alt55.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Creaky-voiced glottal approximant.wav</td><td class="text">CC0 · Eshaan011</td><td><button class="play" data-src="phoneme-library/j-alt56.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/j-alt59.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/j-alt60.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Aproximante palatal.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/j-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">iː — 7 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Close front unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/iː-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/iː-alt42.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/iː-alt43.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/iː-alt44.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/iː-alt47.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/iː-alt49.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/iː-alt50.mp3">▶</button></td></tr>
-<tr><th colspan="3">ɪ — 8 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Near-close near-front unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/ɪ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɪ-alt156.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɪ-alt157.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɪ-alt158.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɪ-alt163.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɪ-alt164.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Frontal vowels a æ ɛ e i.ogg</td><td class="text">CC BY-SA 4.0 · Brendan Heberlein</td><td><button class="play" data-src="phoneme-library/ɪ-alt6.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Nasalised open-mid back rounded vowel.ogg</td><td class="text">CC0 · Manuel Pégourié-Gonnard</td><td><button class="play" data-src="phoneme-library/ɪ-alt7.mp3">▶</button></td></tr>
-<tr><th colspan="3">e — 3 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Open-mid front unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/e-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Close-mid front unrounded vowel.ogg</td><td class="text">CC BY-SA 3.0 · No machine-readable author provided. Denelson83 assumed (based on copyright claims).</td><td><button class="play" data-src="phoneme-library/e-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Close-mid front unrounded vowel 2024.ogg</td><td class="text">CC0 · Awesomecat713</td><td><button class="play" data-src="phoneme-library/e-new0.mp3">▶</button></td></tr>
-<tr><th colspan="3">æ — 2 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Near-open front unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/æ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Near open front unrounded vowel.ogg</td><td class="text">CC BY-SA 4.0 · XxXsuperprobablymanXxX</td><td><button class="play" data-src="phoneme-library/æ-new0.mp3">▶</button></td></tr>
-<tr><th colspan="3">ɑ — 8 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Open back unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/ɑ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɑ-alt119.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɑ-alt120.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɑ-alt122.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɑ-alt127.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɑ-alt128.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Open mid back rounded vowel.ogg</td><td class="text">CC0 · Noam Tesla</td><td><button class="play" data-src="phoneme-library/ɑ-alt8.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Nasalised open back unrounded vowel.ogg</td><td class="text">CC0 · Manuel Pégourié-Gonnard</td><td><button class="play" data-src="phoneme-library/ɑ-new0.mp3">▶</button></td></tr>
-<tr><th colspan="3">ʌ — 9 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Open-mid back unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/ʌ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʌ-alt175.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʌ-alt176.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʌ-alt177.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʌ-alt180.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʌ-alt183.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʌ-alt184.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Open-mid back unrounded vowel (ʌ).ogg</td><td class="text">CC BY-SA 4.0 · Brendan Heberlein</td><td><button class="play" data-src="phoneme-library/ʌ-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — PR-open-mid back unrounded vowel.ogg</td><td class="text">CC BY-SA 4.0 · RoachPeter</td><td><button class="play" data-src="phoneme-library/ʌ-new1.mp3">▶</button></td></tr>
-<tr><th colspan="3">ɔː — 8 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Open-mid back rounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/ɔː-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɔː-alt129.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɔː-alt130.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɔː-alt132.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɔː-alt137.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɔː-alt138.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — PR-open-mid back rounded vowel.ogg</td><td class="text">CC BY-SA 4.0 · RoachPeter</td><td><button class="play" data-src="phoneme-library/ɔː-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Open-mid-back-rounded-vowel.ogg</td><td class="text">CC BY-SA 4.0 · Dan Palraz</td><td><button class="play" data-src="phoneme-library/ɔː-new1.mp3">▶</button></td></tr>
-<tr><th colspan="3">ʊ — 9 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Near-close near-back rounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/ʊ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʊ-alt165.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʊ-alt166.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʊ-alt167.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʊ-alt170.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʊ-alt173.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʊ-alt174.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Near-close near-back rounded vowel (ʊ).ogg</td><td class="text">CC BY-SA 4.0 · Brendan Heberlein</td><td><button class="play" data-src="phoneme-library/ʊ-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — En-us-Near-close near-back rounded vowel2.ogg</td><td class="text">CC BY-SA 4.0 · Sylvanmoon</td><td><button class="play" data-src="phoneme-library/ʊ-new1.mp3">▶</button></td></tr>
-<tr><th colspan="3">uː — 6 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Close back rounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/uː-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/uː-alt86.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/uː-alt87.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/uː-alt88.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/uː-alt94.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/uː-alt95.mp3">▶</button></td></tr>
-<tr><th colspan="3">ə — 10 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Mid-central vowel.ogg</td><td><button class="play" data-src="phoneme-library/ə-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ə-alt139.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ə-alt140.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ə-alt142.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Creaky-voiced glottal approximant.wav</td><td class="text">CC0 · Eshaan011</td><td><button class="play" data-src="phoneme-library/ə-alt143.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ə-alt145.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ə-alt146.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — LL-Q150 (fra)-WikiLucas00-schwa.wav</td><td class="text">CC BY-SA 4.0 · Speaker: WikiLucas00
-Recorder: WikiLucas00</td><td><button class="play" data-src="phoneme-library/ə-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — Schwa.ogg</td><td class="text">CC BY-SA 3.0 · No machine-readable author provided. Denelson83 assumed (based on copyright claims).</td><td><button class="play" data-src="phoneme-library/ə-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 9 — Schwa.wav</td><td class="text">CC BY-SA 4.0 · UofG Language Modules</td><td><button class="play" data-src="phoneme-library/ə-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">ɝ — 8 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Open-mid central unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/ɝ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɝ-alt147.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɝ-alt148.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɝ-alt149.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɝ-alt154.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɝ-alt155.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Regular and r-colored vowels.ogg</td><td class="text">CC BY-SA 3.0 · No machine-readable author provided. Denelson83 assumed (based on copyright claims).</td><td><button class="play" data-src="phoneme-library/ɝ-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — En-us-R-coloured vowel.ogg</td><td class="text">CC BY-SA 4.0 · Persent101</td><td><button class="play" data-src="phoneme-library/ɝ-new1.mp3">▶</button></td></tr>
-</table>
-</body>
-</html>
 
-<h2>11 · Phoneme library — every option per phoneme</h2>
-<p class="note">For each of the 35 bundled phonemes: the current recording, the extracted isolated take (cut from the "ʃ-a-ʃ" sandwich — plosives keep closure+release; sonorants keep their murmur), and every vetted Commons alternate (license · artist). Judge by ear; winners get wired into the app with attribution.</p>
-<table>
-<tr><th colspan="3">p — 4 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless bilabial plosive.ogg</td><td><button class="play" data-src="phoneme-library/p-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.43s</td><td><button class="play" data-src="phoneme-library/p-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Oclusiva bilabial sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/p-cat0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Voiceless bilabial stop.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/p-cat1.mp3">▶</button></td></tr>
-<tr><th colspan="3">b — 9 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced bilabial plosive.ogg</td><td><button class="play" data-src="phoneme-library/b-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.22s</td><td><button class="play" data-src="phoneme-library/b-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/b-alt0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/b-alt1.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/b-alt2.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/b-alt3.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Creaky-voiced glottal approximant.wav</td><td class="text">CC0 · Eshaan011</td><td><button class="play" data-src="phoneme-library/b-alt4.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/b-alt5.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/b-alt6.mp3">▶</button></td></tr>
-<tr><th colspan="3">t — 11 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless alveolar plosive.ogg</td><td><button class="play" data-src="phoneme-library/t-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.23s</td><td><button class="play" data-src="phoneme-library/t-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar approximant.ogg</td><td class="text">CC BY-SA 3.0 · Erutuon</td><td><button class="play" data-src="phoneme-library/t-alt80.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/t-alt81.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/t-alt84.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Labial-velar nasal stop.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/t-alt85.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — 13-12-22 voiceless palatal fricative.ogg</td><td class="text">CC BY-SA 3.0 · Edralis</td><td><button class="play" data-src="phoneme-library/t-alt0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Aspirated voiceless alveolar stop.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/t-alt5.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Aspirated voiceless bilabial stop.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/t-alt6.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — Voiceless alveolar stop.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/t-cat0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 9 — Voiceless labial-alveolar plosive.ogg</td><td class="text">CC BY 3.0 · 1tslmn2015</td><td><button class="play" data-src="phoneme-library/t-cat1.mp3">▶</button></td></tr>
-<tr><th colspan="3">d — 12 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced alveolar plosive.ogg</td><td><button class="play" data-src="phoneme-library/d-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.24s</td><td><button class="play" data-src="phoneme-library/d-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar approximant.ogg</td><td class="text">CC BY-SA 3.0 · Erutuon</td><td><button class="play" data-src="phoneme-library/d-alt7.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/d-alt8.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/d-alt9.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/d-alt10.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/d-alt11.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Labial-velar nasal stop.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/d-alt12.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Voiced alveolar lateral affricate.ogg</td><td class="text">CC BY-SA 3.0 · Adamsa123</td><td><button class="play" data-src="phoneme-library/d-alt13.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — Voiced alveolar non-sibilant fricative.ogg</td><td class="text">CC BY-SA 4.0 · Ajho24</td><td><button class="play" data-src="phoneme-library/d-alt14.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 9 — Voiced alveolar sibilant affricate.oga</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/d-alt15.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 10 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/d-alt16.mp3">▶</button></td></tr>
-<tr><th colspan="3">k — 10 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless velar plosive.ogg</td><td><button class="play" data-src="phoneme-library/k-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.24s</td><td><button class="play" data-src="phoneme-library/k-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/k-alt61.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/k-alt62.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/k-alt65.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Labial-velar nasal stop.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/k-alt66.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/k-alt68.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Nasal velar.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/k-alt8.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Oclusiva velar sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/k-cat0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — Voiceless labial-velar plosive.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/k-cat1.mp3">▶</button></td></tr>
-<tr><th colspan="3">g — 16 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced velar plosive.ogg</td><td><button class="play" data-src="phoneme-library/g-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.24s</td><td><button class="play" data-src="phoneme-library/g-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-alt24.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-alt25.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-alt26.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-alt29.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Labial-velar nasal stop.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/g-alt30.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiced alveolar non-sibilant fricative.ogg</td><td class="text">CC BY-SA 4.0 · Ajho24</td><td><button class="play" data-src="phoneme-library/g-alt31.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-alt33.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — Prenasalized voiced velar plosive.ogg</td><td class="text">CC BY 2.5 · unknown</td><td><button class="play" data-src="phoneme-library/g-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 9 — Oclusiva velar sonora.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/g-cat0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 10 — PR-voiced velar stop.ogg</td><td class="text">CC BY-SA 4.0 · RoachPeter</td><td><button class="play" data-src="phoneme-library/g-cat1.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 11 — Voiced labial-velar plosive.ogg</td><td class="text">CC BY 2.5 · No machine-readable author provided. Moyogo assumed (based on copyright claims).</td><td><button class="play" data-src="phoneme-library/g-cat2.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 12 — Voiced labial-velar plosive1.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/g-cat3.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 13 — Voiced velar plosive 02.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/g-cat4.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 14 — Voiced velar stop.ogg</td><td class="text">CC BY-SA 3.0 · Britannic124</td><td><button class="play" data-src="phoneme-library/g-cat5.mp3">▶</button></td></tr>
-<tr><th colspan="3">f — 11 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless labiodental fricative.ogg</td><td><button class="play" data-src="phoneme-library/f-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.26s</td><td><button class="play" data-src="phoneme-library/f-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/f-alt18.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/f-alt19.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/f-alt20.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/f-alt21.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/f-alt23.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Dental ejective fricative.ogg</td><td class="text">CC BY-SA 3.0 · Adamsa123</td><td><button class="play" data-src="phoneme-library/f-alt7.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — PR-voiceless labiodental fricative.ogg</td><td class="text">CC BY-SA 4.0 · RoachPeter</td><td><button class="play" data-src="phoneme-library/f-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — Fricativa labiodental sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/f-cat0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 9 — Fricative labio-dentale éjective.ogg</td><td class="text">CC BY-SA 3.0 · Original uploader was Vincent Ramos at fr.wikipedia</td><td><button class="play" data-src="phoneme-library/f-cat1.mp3">▶</button></td></tr>
-<tr><th colspan="3">v — 9 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced labiodental fricative.ogg</td><td><button class="play" data-src="phoneme-library/v-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.66s</td><td><button class="play" data-src="phoneme-library/v-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/v-alt97.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/v-alt98.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/v-alt99.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Voiced alveolar non-sibilant fricative.ogg</td><td class="text">CC BY-SA 4.0 · Ajho24</td><td><button class="play" data-src="phoneme-library/v-alt102.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/v-alt104.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/v-alt105.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — PR-voiced labiodental fricative.ogg</td><td class="text">CC BY-SA 4.0 · RoachPeter</td><td><button class="play" data-src="phoneme-library/v-new0.mp3">▶</button></td></tr>
-<tr><th colspan="3">θ — 8 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless dental fricative.ogg</td><td><button class="play" data-src="phoneme-library/θ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.49s</td><td><button class="play" data-src="phoneme-library/θ-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/θ-alt187.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/θ-alt188.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/θ-alt189.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/θ-alt192.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless Dental Fricative.ogg</td><td class="text">CC0 · HuiXingMusic</td><td><button class="play" data-src="phoneme-library/θ-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Fricativa interdental sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/θ-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">ð — 9 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced dental fricative.ogg</td><td><button class="play" data-src="phoneme-library/ð-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.73s</td><td><button class="play" data-src="phoneme-library/ð-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ð-alt107.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ð-alt108.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ð-alt109.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Creaky-voiced glottal approximant.wav</td><td class="text">CC0 · Eshaan011</td><td><button class="play" data-src="phoneme-library/ð-alt111.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiced alveolar lateral affricate.ogg</td><td class="text">CC BY-SA 3.0 · Adamsa123</td><td><button class="play" data-src="phoneme-library/ð-alt113.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiced alveolar non-sibilant fricative.ogg</td><td class="text">CC BY-SA 4.0 · Ajho24</td><td><button class="play" data-src="phoneme-library/ð-alt114.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ð-alt116.mp3">▶</button></td></tr>
-<tr><th colspan="3">s — 3 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless alveolar sibilant.ogg</td><td><button class="play" data-src="phoneme-library/s-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.57s</td><td><button class="play" data-src="phoneme-library/s-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Fricativa alveolar sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/s-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">z — 3 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced alveolar sibilant.ogg</td><td><button class="play" data-src="phoneme-library/z-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.82s</td><td><button class="play" data-src="phoneme-library/z-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Fricativa alveolar sonorizada.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/z-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">ʃ — 4 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless palato-alveolar sibilant.ogg</td><td><button class="play" data-src="phoneme-library/ʃ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.72s</td><td><button class="play" data-src="phoneme-library/ʃ-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Echador Voiceless palato-alveolar sibilant Northern Latin Spanish.wav</td><td class="text">CC BY-SA 4.0 · Saikoispro</td><td><button class="play" data-src="phoneme-library/ʃ-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Fricativa postalveolar sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/ʃ-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">ʒ — 3 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced palato-alveolar sibilant.ogg</td><td><button class="play" data-src="phoneme-library/ʒ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.71s</td><td><button class="play" data-src="phoneme-library/ʒ-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Fricativa postalveolar sonorizada.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/ʒ-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">tʃ — 4 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless palato-alveolar affricate.ogg</td><td><button class="play" data-src="phoneme-library/tʃ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.33s</td><td><button class="play" data-src="phoneme-library/tʃ-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Chocolate Voiceless palato-alveolar affricate Latin Spanish.wav</td><td class="text">CC BY-SA 4.0 · Saikoispro</td><td><button class="play" data-src="phoneme-library/tʃ-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Africada postalveolar sorda.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/tʃ-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">dʒ — 4 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced palato-alveolar affricate.ogg</td><td><button class="play" data-src="phoneme-library/dʒ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.17s</td><td><button class="play" data-src="phoneme-library/dʒ-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Voiced palato-alveolar affricate pronunciation.oga</td><td class="text">CC BY-SA 4.0 · XxXsuperprobablymanXxX</td><td><button class="play" data-src="phoneme-library/dʒ-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Africada postalveolar sonora.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/dʒ-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">h — 7 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiceless glottal fricative.ogg</td><td><button class="play" data-src="phoneme-library/h-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.81s</td><td><button class="play" data-src="phoneme-library/h-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/h-alt35.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/h-alt36.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/h-alt37.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/h-alt40.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/h-alt41.mp3">▶</button></td></tr>
-<tr><th colspan="3">m — 3 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Bilabial nasal.ogg</td><td><button class="play" data-src="phoneme-library/m-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.76s</td><td><button class="play" data-src="phoneme-library/m-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Labial-velar nasal stop.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/m-alt72.mp3">▶</button></td></tr>
-<tr><th colspan="3">n — 4 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Alveolar nasal.ogg</td><td><button class="play" data-src="phoneme-library/n-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.77s</td><td><button class="play" data-src="phoneme-library/n-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Voiced denti-alveolar nasal.wav</td><td class="text">CC BY 4.0 · Voicedbilabialtrill</td><td><button class="play" data-src="phoneme-library/n-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Voiced palato alveolar nasal.ogg</td><td class="text">CC BY 4.0 · RockyWikiSantali</td><td><button class="play" data-src="phoneme-library/n-new1.mp3">▶</button></td></tr>
-<tr><th colspan="3">ŋ — 3 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Velar nasal.ogg</td><td><button class="play" data-src="phoneme-library/ŋ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.76s</td><td><button class="play" data-src="phoneme-library/ŋ-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Labial-velar nasal stop.ogg</td><td class="text">Public domain · Anak 1</td><td><button class="play" data-src="phoneme-library/ŋ-alt117.mp3">▶</button></td></tr>
-<tr><th colspan="3">l — 11 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Alveolar lateral approximant.ogg</td><td><button class="play" data-src="phoneme-library/l-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.83s</td><td><button class="play" data-src="phoneme-library/l-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar approximant.ogg</td><td class="text">CC BY-SA 3.0 · Erutuon</td><td><button class="play" data-src="phoneme-library/l-alt69.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Creaky-voiced glottal approximant.wav</td><td class="text">CC0 · Eshaan011</td><td><button class="play" data-src="phoneme-library/l-alt70.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Palatal lateral approximant - SK.ogg</td><td class="text">CC BY-SA 3.0 · Edralis</td><td><button class="play" data-src="phoneme-library/l-alt2.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Postalveolar approximant.ogg</td><td class="text">CC BY-SA 3.0 · Peter Isotalo</td><td><button class="play" data-src="phoneme-library/l-alt3.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar approximant.ogg</td><td class="text">CC BY-SA 4.0 · NoahKuhn9</td><td><button class="play" data-src="phoneme-library/l-alt4.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Lateral dental.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/l-cat0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Lateral palatal.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/l-cat1.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — Velar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/l-cat2.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 9 — Voiced dental lateral approximant.ogg</td><td class="text">CC BY-SA 4.0 · YodaMaster445</td><td><button class="play" data-src="phoneme-library/l-cat3.mp3">▶</button></td></tr>
-<tr><th colspan="3">r — 5 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Alveolar approximant.ogg</td><td><button class="play" data-src="phoneme-library/r-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.15s</td><td><button class="play" data-src="phoneme-library/r-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/r-alt74.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Creaky-voiced glottal approximant.wav</td><td class="text">CC0 · Eshaan011</td><td><button class="play" data-src="phoneme-library/r-alt75.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Retroflex approximant.ogg</td><td class="text">CC BY-SA 3.0 · Karmosin</td><td><button class="play" data-src="phoneme-library/r-new0.mp3">▶</button></td></tr>
-<tr><th colspan="3">w — 2 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Voiced labio-velar approximant.ogg</td><td><button class="play" data-src="phoneme-library/w-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.69s</td><td><button class="play" data-src="phoneme-library/w-extracted.mp3">▶</button></td></tr>
-<tr><th colspan="3">j — 9 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Palatal approximant.ogg</td><td><button class="play" data-src="phoneme-library/j-current.mp3">▶</button></td></tr>
-<tr><td class="engine">extracted — first consonant cut from the sandwich</td><td class="text">cut 0.77s</td><td><button class="play" data-src="phoneme-library/j-extracted.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/j-alt51.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/j-alt52.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/j-alt55.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Creaky-voiced glottal approximant.wav</td><td class="text">CC0 · Eshaan011</td><td><button class="play" data-src="phoneme-library/j-alt56.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/j-alt59.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/j-alt60.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Aproximante palatal.ogg</td><td class="text">Public domain · Susana Freixeiro</td><td><button class="play" data-src="phoneme-library/j-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">iː — 7 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Close front unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/iː-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/iː-alt42.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/iː-alt43.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/iː-alt44.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/iː-alt47.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/iː-alt49.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/iː-alt50.mp3">▶</button></td></tr>
-<tr><th colspan="3">ɪ — 8 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Near-close near-front unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/ɪ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɪ-alt156.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɪ-alt157.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɪ-alt158.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɪ-alt163.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɪ-alt164.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Frontal vowels a æ ɛ e i.ogg</td><td class="text">CC BY-SA 4.0 · Brendan Heberlein</td><td><button class="play" data-src="phoneme-library/ɪ-alt6.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Nasalised open-mid back rounded vowel.ogg</td><td class="text">CC0 · Manuel Pégourié-Gonnard</td><td><button class="play" data-src="phoneme-library/ɪ-alt7.mp3">▶</button></td></tr>
-<tr><th colspan="3">e — 3 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Open-mid front unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/e-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Close-mid front unrounded vowel.ogg</td><td class="text">CC BY-SA 3.0 · No machine-readable author provided. Denelson83 assumed (based on copyright claims).</td><td><button class="play" data-src="phoneme-library/e-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Close-mid front unrounded vowel 2024.ogg</td><td class="text">CC0 · Awesomecat713</td><td><button class="play" data-src="phoneme-library/e-new0.mp3">▶</button></td></tr>
-<tr><th colspan="3">æ — 2 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Near-open front unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/æ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Near open front unrounded vowel.ogg</td><td class="text">CC BY-SA 4.0 · XxXsuperprobablymanXxX</td><td><button class="play" data-src="phoneme-library/æ-new0.mp3">▶</button></td></tr>
-<tr><th colspan="3">ɑ — 8 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Open back unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/ɑ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɑ-alt119.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɑ-alt120.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɑ-alt122.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɑ-alt127.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɑ-alt128.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Open mid back rounded vowel.ogg</td><td class="text">CC0 · Noam Tesla</td><td><button class="play" data-src="phoneme-library/ɑ-alt8.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Nasalised open back unrounded vowel.ogg</td><td class="text">CC0 · Manuel Pégourié-Gonnard</td><td><button class="play" data-src="phoneme-library/ɑ-new0.mp3">▶</button></td></tr>
-<tr><th colspan="3">ʌ — 9 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Open-mid back unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/ʌ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʌ-alt175.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʌ-alt176.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʌ-alt177.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʌ-alt180.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʌ-alt183.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʌ-alt184.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Open-mid back unrounded vowel (ʌ).ogg</td><td class="text">CC BY-SA 4.0 · Brendan Heberlein</td><td><button class="play" data-src="phoneme-library/ʌ-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — PR-open-mid back unrounded vowel.ogg</td><td class="text">CC BY-SA 4.0 · RoachPeter</td><td><button class="play" data-src="phoneme-library/ʌ-new1.mp3">▶</button></td></tr>
-<tr><th colspan="3">ɔː — 8 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Open-mid back rounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/ɔː-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɔː-alt129.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɔː-alt130.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɔː-alt132.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɔː-alt137.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɔː-alt138.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — PR-open-mid back rounded vowel.ogg</td><td class="text">CC BY-SA 4.0 · RoachPeter</td><td><button class="play" data-src="phoneme-library/ɔː-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Open-mid-back-rounded-vowel.ogg</td><td class="text">CC BY-SA 4.0 · Dan Palraz</td><td><button class="play" data-src="phoneme-library/ɔː-new1.mp3">▶</button></td></tr>
-<tr><th colspan="3">ʊ — 9 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Near-close near-back rounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/ʊ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʊ-alt165.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʊ-alt166.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʊ-alt167.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʊ-alt170.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʊ-alt173.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ʊ-alt174.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — Near-close near-back rounded vowel (ʊ).ogg</td><td class="text">CC BY-SA 4.0 · Brendan Heberlein</td><td><button class="play" data-src="phoneme-library/ʊ-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — En-us-Near-close near-back rounded vowel2.ogg</td><td class="text">CC BY-SA 4.0 · Sylvanmoon</td><td><button class="play" data-src="phoneme-library/ʊ-new1.mp3">▶</button></td></tr>
-<tr><th colspan="3">uː — 6 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Close back rounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/uː-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/uː-alt86.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/uː-alt87.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/uː-alt88.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/uː-alt94.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/uː-alt95.mp3">▶</button></td></tr>
-<tr><th colspan="3">ə — 10 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Mid-central vowel.ogg</td><td><button class="play" data-src="phoneme-library/ə-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ə-alt139.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ə-alt140.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Bilabial ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ə-alt142.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Creaky-voiced glottal approximant.wav</td><td class="text">CC0 · Eshaan011</td><td><button class="play" data-src="phoneme-library/ə-alt143.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ə-alt145.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ə-alt146.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — LL-Q150 (fra)-WikiLucas00-schwa.wav</td><td class="text">CC BY-SA 4.0 · Speaker: WikiLucas00
-Recorder: WikiLucas00</td><td><button class="play" data-src="phoneme-library/ə-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 8 — Schwa.ogg</td><td class="text">CC BY-SA 3.0 · No machine-readable author provided. Denelson83 assumed (based on copyright claims).</td><td><button class="play" data-src="phoneme-library/ə-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 9 — Schwa.wav</td><td class="text">CC BY-SA 4.0 · UofG Language Modules</td><td><button class="play" data-src="phoneme-library/ə-cat0.mp3">▶</button></td></tr>
-<tr><th colspan="3">ɝ — 8 options</th></tr>
-<tr><td class="engine">current — the app's bundled recording</td><td class="text">File:Open-mid central unrounded vowel.ogg</td><td><button class="play" data-src="phoneme-library/ɝ-current.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 1 — Alveolar ejective plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɝ-alt147.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 2 — Alveolar lateral approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɝ-alt148.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 3 — Alveolar lateral click.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɝ-alt149.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 4 — Voiced velar approximant.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɝ-alt154.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 5 — Voiceless alveolar plosive.ogg</td><td class="text">CC BY-SA 3.0 · unknown</td><td><button class="play" data-src="phoneme-library/ɝ-alt155.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 6 — Regular and r-colored vowels.ogg</td><td class="text">CC BY-SA 3.0 · No machine-readable author provided. Denelson83 assumed (based on copyright claims).</td><td><button class="play" data-src="phoneme-library/ɝ-new0.mp3">▶</button></td></tr>
-<tr><td class="engine">alternate 7 — En-us-R-coloured vowel.ogg</td><td class="text">CC BY-SA 4.0 · Persent101</td><td><button class="play" data-src="phoneme-library/ɝ-new1.mp3">▶</button></td></tr>
-</table>
+<script>
+	// Delegated listener — works for every section regardless of DOM order.
+	// Playing state: icon swaps to "⏸" and the button turns indigo.
+	let current = null
+	let currentBtn = null
+
+	function stopCurrent() {
+		if (current) { current.pause(); current.currentTime = 0 }
+		if (currentBtn) { currentBtn.classList.remove('playing'); currentBtn.textContent = '▶' }
+		current = null; currentBtn = null
+	}
+
+	document.addEventListener('click', (event) => {
+		const btn = event.target.closest('button.play')
+		if (!btn) return
+		const src = btn.dataset.src
+		if (currentBtn === btn) { stopCurrent(); return }
+		stopCurrent()
+		current = new Audio(src)
+		currentBtn = btn
+		btn.classList.add('playing')
+		btn.textContent = '⏸'
+		current.onended = () => stopCurrent()
+		current.onerror = () => stopCurrent()
+		current.play()
+	})
+</script>
 </body>
 </html>
