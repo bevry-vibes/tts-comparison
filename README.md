@@ -29,16 +29,15 @@ Full evidence table in [FINDINGS.md](./FINDINGS.md). Audition clips in [`auditio
 | ❌ eliminated | Fish S2 Pro, Step Audio EditX | No usable open CPU runtime / 13B-class GPU models |
 | ❌ skipped | Qwen3-TTS 1.7B, VoxCPM2 | Apache-2.0 but CUDA-documented and no British voice — revisit if a GPU enters the household |
 
-## Where this stands (2026-09-08) & what's next
+## Where this stands (2026-09-09) & what's next
 
-**The decision landed:** Higgs v3 default voice renders all 194 app words (shipped to sumba-bisa @ d814129, untrimmed, one model load, spectral-QA'd). The audition player ([`auditions/index.html`](./auditions/index.html)) is organised A–E: **A** English voices matrix · **B** word render A/B (Higgs vs Piper, all 194) · **C** Indonesian (one table) · **D** phoneme library (240 clips — current + extracted sandwich cut + vetted Commons alternates per phoneme) · **E** historical 78rpm records (Lloyd James 1930, Daniel Jones). Settled one-time A/Bs live in [`auditions/diagnostics.html`](./auditions/diagnostics.html).
+**The decision landed:** Higgs v3 default voice renders all 194 app words (shipped to sumba-bisa @ d814129, untrimmed, one model load, spectral-QA'd). The audition player ([`auditions/index.html`](./auditions/index.html)) is organised A–E: **A** English voices matrix (incl. Higgs accent clones from macOS Samantha/Daniel refs — 6/6 takes rendered and wired in) · **B** word render A/B (Higgs vs Piper, all 194) · **C** Indonesian (one table) · **D** phoneme library (240 clips — current + extracted sandwich cut + vetted Commons alternates per phoneme) · **E** historical 78rpm records (Lloyd James 1930, Daniel Jones). Settled one-time A/Bs live in [`auditions/diagnostics.html`](./auditions/diagnostics.html).
 
 **Follow-ups needed (in order):**
-1. Her per-phoneme ear picks from section D → wire winners into the app with attribution.
+1. Her per-phoneme ear picks from section D → wire winners into the app with attribution. No picks exist yet; the player has no pick/export UI, so she calls them by ear and they get recorded here.
 2. If Commons material still disappoints (p/s/w/z/ʒ have no other clean isolated takes — real gap), propose fine-tuning a small phoneme-conditioned TTS on our extracted takes.
-3. Higgs US/GB accent clones (Samantha/Daniel refs): 2/6 rendered; rerun `~/.cache/sumba-tts/render_higgs_clones.py` alone behind `mem_wait 70` (16GB machine: one model job, nothing beside it).
-4. Sumbanese MMS-tts-kdb — needs her Hugging Face token (gated), then it can prototype L1 reference audio.
-5. Machine health: the 460GB disk hit 99% full on 2026-09-08 — real cleanup needed before more model/download work.
+3. Sumbanese MMS-tts-kdb — needs her Hugging Face token (gated), then it can prototype L1 reference audio.
+4. Machine health: the 460GB disk hit 99% full on 2026-09-08; 2026-09-09 cleared ~8.3GB of regenerable package caches (npm/uv/pip) → only ~6GB free. The real weight needs owner decisions: /Applications 54G, ~/Library 55G (14G Thunderbird mail), and the auditioned Chatterbox weights (~8G incl. the Indonesian variant) — keep until her picks settle, they're regeneration material.
 
 Full quirks log (Higgs single-word fix, Kokoro tail artifact, venv pitfalls, Wikimedia rate limits, the disk/memory incidents) in [FINDINGS.md](./FINDINGS.md).
 
