@@ -81,6 +81,12 @@ The user's verdict on the first phoneme options: "the current ones are all bad �
 
 All downloads are idempotent by filename (`{pid}-alt{i}.mp3` = vetted order, `{pid}-new{n}.mp3` = descriptor discoveries, `{pid}-current.mp3` = bundled original, `{pid}-extracted.mp3` = our cut) with `manifest.json` carrying `{pid: {ipa, current, alternates: [{file, title, license, artist}]}}`. Conversions that failed on the flaky network re-run cleanly (the rebuild script skips manifest-present titles).
 
+**Coverage after the final pass (213 clips):** every phoneme has current + extracted + alternates, except p s w z ʒ (0–1 alternates) and m ŋ (1) — for those, the canonical Commons file *is* the bundled recording and no other clean isolated takes exist; the thin-phoneme word-exemplar fallback (labeled "word exemplar") found little worth keeping. **This is a real gap in open material for those sounds, not a pipeline failure.**
+
+**Rate-limit lessons:** Wikimedia's `upload.wikimedia.org` 429s persist for long windows once triggered; a proper descriptive `User-Agent` (their stated policy), ≥15 s pacing, and long true cooldowns (10+ min with zero requests) are what got the crawl through — rapid retries keep resetting the penalty.
+
+**Historical/classical references (player section 13):** archive.org's Great 78 Project has the actual classical phonetics artifacts — **Prof. A. Lloyd James** (BBC advisory officer) "ENGLISH SOUNDS" (1930) and a "Broadcast English" lesson, and **Prof. Daniel Jones** (author of *An Outline of English Phonetics*) reading early 17th-century English (No. 5 + 6). Single-side tracks, not phoneme drills, but period-accurate references. No per-phoneme drill records surfaced in archive.org searches.
+
 ## Setup quick reference
 
 ```bash
