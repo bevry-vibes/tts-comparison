@@ -71,6 +71,16 @@ The app needs 41 isolated phoneme clips. The first phoneme test fed ASCII spelli
 
 Implication for Sumba Bisa: a **single Apache-2.0 Kokoro voice can render all 41 phonemes from IPA** consistently (with the same breath-trim post-processing), replacing the "real recordings + TTS fallback" split — pending the ear verdict on quality vs the Commons recordings.
 
+## Phoneme library — every option per phoneme (player section 11)
+
+The user's verdict on the first phoneme options: "the current ones are all bad — I want way more options." Built in three layers, all in `auditions/phoneme-library/`:
+
+1. **Sandwich extraction (our own recordings).** The 35 bundled recordings are human takes in a "ʃ-a-ʃ" sandwich. `~/.cache/sumba-tts/extract_sandwich.py` isolates the first consonant: first energy region ≥100ms (regions <80ms apart merged — frication amplitude dips otherwise split a sound into chunks), and for plosives/affricates an autocorrelation-voicing cut at the first sustained (≥50ms) voiced onset, keeping closure + burst + ~60ms (the release "p" sound), dropping the merged vowel. Sonorants (m n ŋ l r w j ð v z ʒ) flow into the vowel without any energy boundary — those cuts keep the murmur and are best-effort.
+2. **Vetted Commons alternates.** Starting from the 484-file `Category:Audio files of phonetic samples`, name-matched candidates are vetted by *shared specific categories* with our bundled file (minus generic cross-cutting categories) + manner (fricative/plosive/affricate/nasal/approximant/sibilant) + voicing agreement → `/tmp/commons-vetted.json` (231 entries; best-covered d/g/v/ð/j/ɑ/ʌ/ʊ at 12 each). Each carries title + license + artist into `manifest.json`. Known weak spot: the category-overlap rule admits a few exotic cousins (ejectives, clicks) — they are labeled, not filtered, so the ear decides.
+3. **Descriptor discovery for thin phonemes.** The 10 most common consonants (p n s ʃ tʃ dʒ w z æ e) had zero alternates from category overlap. Each got an explicit descriptor table (e.g. p = "voiceless bilabial plosive", ɝ = "r-colored vowel") searched on Commons (namespace 6), plus co-members of the seed's own per-phoneme category (`Category:Voiceless bilabial plosive (IPA p)` exists for every consonant). Title filters reject labialized/palatalized/ejective/click/aspirated variants and voicing mismatches.
+
+All downloads are idempotent by filename (`{pid}-alt{i}.mp3` = vetted order, `{pid}-new{n}.mp3` = descriptor discoveries, `{pid}-current.mp3` = bundled original, `{pid}-extracted.mp3` = our cut) with `manifest.json` carrying `{pid: {ipa, current, alternates: [{file, title, license, artist}]}}`. Conversions that failed on the flaky network re-run cleanly (the rebuild script skips manifest-present titles).
+
 ## Setup quick reference
 
 ```bash

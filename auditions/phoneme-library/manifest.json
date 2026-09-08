@@ -1,0 +1,1131 @@
+{
+ "b": {
+  "ipa": "b",
+  "current": "File:Voiced bilabial plosive.ogg",
+  "alternates": [
+   {
+    "file": "b-alt0.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "b-alt1.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "b-alt2.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "b-alt3.mp3",
+    "title": "File:Bilabial ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "b-alt4.mp3",
+    "title": "File:Creaky-voiced glottal approximant.wav",
+    "license": "CC0",
+    "artist": "Eshaan011"
+   },
+   {
+    "file": "b-alt5.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "b-alt6.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   }
+  ]
+ },
+ "d": {
+  "ipa": "d",
+  "current": "File:Voiced alveolar plosive.ogg",
+  "alternates": [
+   {
+    "file": "d-alt7.mp3",
+    "title": "File:Alveolar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Erutuon"
+   },
+   {
+    "file": "d-alt8.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "d-alt9.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "d-alt10.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "d-alt11.mp3",
+    "title": "File:Bilabial ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "d-alt12.mp3",
+    "title": "File:Labial-velar nasal stop.ogg",
+    "license": "Public domain",
+    "artist": "Anak 1"
+   },
+   {
+    "file": "d-alt13.mp3",
+    "title": "File:Voiced alveolar lateral affricate.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Adamsa123"
+   },
+   {
+    "file": "d-alt14.mp3",
+    "title": "File:Voiced alveolar non-sibilant fricative.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Ajho24"
+   },
+   {
+    "file": "d-alt15.mp3",
+    "title": "File:Voiced alveolar sibilant affricate.oga",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "d-alt16.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   }
+  ]
+ },
+ "dʒ": {
+  "ipa": "dʒ",
+  "current": "File:Voiced palato-alveolar affricate.ogg",
+  "alternates": [
+   {
+    "file": "dʒ-new0.mp3",
+    "title": "File:Voiced palato-alveolar affricate pronunciation.oga",
+    "license": "CC BY-SA 4.0",
+    "artist": "XxXsuperprobablymanXxX"
+   }
+  ]
+ },
+ "e": {
+  "ipa": "e",
+  "current": "File:Open-mid front unrounded vowel.ogg",
+  "alternates": [
+   {
+    "file": "e-new0.mp3",
+    "title": "File:Close-mid front unrounded vowel.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "No machine-readable author provided. Denelson83 assumed (based on copyright claims)."
+   }
+  ]
+ },
+ "f": {
+  "ipa": "f",
+  "current": "File:Voiceless labiodental fricative.ogg",
+  "alternates": [
+   {
+    "file": "f-alt18.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "f-alt19.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "f-alt20.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "f-alt21.mp3",
+    "title": "File:Bilabial ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "f-alt23.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "f-alt7.mp3",
+    "title": "File:Dental ejective fricative.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Adamsa123"
+   },
+   {
+    "file": "f-new0.mp3",
+    "title": "File:PR-voiceless labiodental fricative.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "RoachPeter"
+   }
+  ]
+ },
+ "g": {
+  "ipa": "g",
+  "current": "File:Voiced velar plosive.ogg",
+  "alternates": [
+   {
+    "file": "g-alt24.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "g-alt25.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "g-alt26.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "g-alt29.mp3",
+    "title": "File:Bilabial ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "g-alt30.mp3",
+    "title": "File:Labial-velar nasal stop.ogg",
+    "license": "Public domain",
+    "artist": "Anak 1"
+   },
+   {
+    "file": "g-alt31.mp3",
+    "title": "File:Voiced alveolar non-sibilant fricative.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Ajho24"
+   },
+   {
+    "file": "g-alt33.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "g-new0.mp3",
+    "title": "File:Prenasalized voiced velar plosive.ogg",
+    "license": "CC BY 2.5",
+    "artist": "unknown"
+   }
+  ]
+ },
+ "h": {
+  "ipa": "h",
+  "current": "File:Voiceless glottal fricative.ogg",
+  "alternates": [
+   {
+    "file": "h-alt35.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "h-alt36.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "h-alt37.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "h-alt40.mp3",
+    "title": "File:Bilabial ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "h-alt41.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   }
+  ]
+ },
+ "iː": {
+  "ipa": "iː",
+  "current": "File:Close front unrounded vowel.ogg",
+  "alternates": [
+   {
+    "file": "iː-alt42.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "iː-alt43.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "iː-alt44.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "iː-alt47.mp3",
+    "title": "File:Bilabial ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "iː-alt49.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "iː-alt50.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   }
+  ]
+ },
+ "j": {
+  "ipa": "j",
+  "current": "File:Palatal approximant.ogg",
+  "alternates": [
+   {
+    "file": "j-alt51.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "j-alt52.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "j-alt55.mp3",
+    "title": "File:Bilabial ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "j-alt56.mp3",
+    "title": "File:Creaky-voiced glottal approximant.wav",
+    "license": "CC0",
+    "artist": "Eshaan011"
+   },
+   {
+    "file": "j-alt59.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "j-alt60.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   }
+  ]
+ },
+ "k": {
+  "ipa": "k",
+  "current": "File:Voiceless velar plosive.ogg",
+  "alternates": [
+   {
+    "file": "k-alt61.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "k-alt62.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "k-alt65.mp3",
+    "title": "File:Bilabial ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "k-alt66.mp3",
+    "title": "File:Labial-velar nasal stop.ogg",
+    "license": "Public domain",
+    "artist": "Anak 1"
+   },
+   {
+    "file": "k-alt68.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "k-alt8.mp3",
+    "title": "File:Nasal velar.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
+   }
+  ]
+ },
+ "l": {
+  "ipa": "l",
+  "current": "File:Alveolar lateral approximant.ogg",
+  "alternates": [
+   {
+    "file": "l-alt69.mp3",
+    "title": "File:Alveolar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Erutuon"
+   },
+   {
+    "file": "l-alt70.mp3",
+    "title": "File:Creaky-voiced glottal approximant.wav",
+    "license": "CC0",
+    "artist": "Eshaan011"
+   },
+   {
+    "file": "l-alt2.mp3",
+    "title": "File:Palatal lateral approximant - SK.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Edralis"
+   },
+   {
+    "file": "l-alt3.mp3",
+    "title": "File:Postalveolar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Peter Isotalo"
+   },
+   {
+    "file": "l-alt4.mp3",
+    "title": "File:Voiceless alveolar approximant.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "NoahKuhn9"
+   }
+  ]
+ },
+ "m": {
+  "ipa": "m",
+  "current": "File:Bilabial nasal.ogg",
+  "alternates": [
+   {
+    "file": "m-alt72.mp3",
+    "title": "File:Labial-velar nasal stop.ogg",
+    "license": "Public domain",
+    "artist": "Anak 1"
+   }
+  ]
+ },
+ "n": {
+  "ipa": "n",
+  "current": "File:Alveolar nasal.ogg",
+  "alternates": [
+   {
+    "file": "n-new0.mp3",
+    "title": "File:Voiced denti-alveolar nasal.wav",
+    "license": "CC BY 4.0",
+    "artist": "Voicedbilabialtrill"
+   },
+   {
+    "file": "n-new1.mp3",
+    "title": "File:Voiced palato alveolar nasal.ogg",
+    "license": "CC BY 4.0",
+    "artist": "RockyWikiSantali"
+   }
+  ]
+ },
+ "p": {
+  "ipa": "p",
+  "current": "File:Voiceless bilabial plosive.ogg",
+  "alternates": []
+ },
+ "r": {
+  "ipa": "r",
+  "current": "File:Alveolar approximant.ogg",
+  "alternates": [
+   {
+    "file": "r-alt74.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "r-alt75.mp3",
+    "title": "File:Creaky-voiced glottal approximant.wav",
+    "license": "CC0",
+    "artist": "Eshaan011"
+   },
+   {
+    "file": "r-new0.mp3",
+    "title": "File:Retroflex approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Karmosin"
+   }
+  ]
+ },
+ "s": {
+  "ipa": "s",
+  "current": "File:Voiceless alveolar sibilant.ogg",
+  "alternates": []
+ },
+ "t": {
+  "ipa": "t",
+  "current": "File:Voiceless alveolar plosive.ogg",
+  "alternates": [
+   {
+    "file": "t-alt80.mp3",
+    "title": "File:Alveolar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Erutuon"
+   },
+   {
+    "file": "t-alt81.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "t-alt84.mp3",
+    "title": "File:Bilabial ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "t-alt85.mp3",
+    "title": "File:Labial-velar nasal stop.ogg",
+    "license": "Public domain",
+    "artist": "Anak 1"
+   },
+   {
+    "file": "t-alt0.mp3",
+    "title": "File:13-12-22 voiceless palatal fricative.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Edralis"
+   },
+   {
+    "file": "t-alt5.mp3",
+    "title": "File:Aspirated voiceless alveolar stop.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "t-alt6.mp3",
+    "title": "File:Aspirated voiceless bilabial stop.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   }
+  ]
+ },
+ "tʃ": {
+  "ipa": "tʃ",
+  "current": "File:Voiceless palato-alveolar affricate.ogg",
+  "alternates": [
+   {
+    "file": "tʃ-new0.mp3",
+    "title": "File:Chocolate Voiceless palato-alveolar affricate Latin Spanish.wav",
+    "license": "CC BY-SA 4.0",
+    "artist": "Saikoispro"
+   }
+  ]
+ },
+ "uː": {
+  "ipa": "uː",
+  "current": "File:Close back rounded vowel.ogg",
+  "alternates": [
+   {
+    "file": "uː-alt86.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "uː-alt87.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "uː-alt88.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "uː-alt94.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "uː-alt95.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   }
+  ]
+ },
+ "v": {
+  "ipa": "v",
+  "current": "File:Voiced labiodental fricative.ogg",
+  "alternates": [
+   {
+    "file": "v-alt97.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "v-alt98.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "v-alt99.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "v-alt102.mp3",
+    "title": "File:Voiced alveolar non-sibilant fricative.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Ajho24"
+   },
+   {
+    "file": "v-alt104.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "v-alt105.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "v-new0.mp3",
+    "title": "File:PR-voiced labiodental fricative.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "RoachPeter"
+   }
+  ]
+ },
+ "w": {
+  "ipa": "w",
+  "current": "File:Voiced labio-velar approximant.ogg",
+  "alternates": []
+ },
+ "z": {
+  "ipa": "z",
+  "current": "File:Voiced alveolar sibilant.ogg",
+  "alternates": []
+ },
+ "æ": {
+  "ipa": "æ",
+  "current": "File:Near-open front unrounded vowel.ogg",
+  "alternates": [
+   {
+    "file": "æ-new0.mp3",
+    "title": "File:Near open front unrounded vowel.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "XxXsuperprobablymanXxX"
+   }
+  ]
+ },
+ "ð": {
+  "ipa": "ð",
+  "current": "File:Voiced dental fricative.ogg",
+  "alternates": [
+   {
+    "file": "ð-alt107.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ð-alt108.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ð-alt109.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ð-alt111.mp3",
+    "title": "File:Creaky-voiced glottal approximant.wav",
+    "license": "CC0",
+    "artist": "Eshaan011"
+   },
+   {
+    "file": "ð-alt113.mp3",
+    "title": "File:Voiced alveolar lateral affricate.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Adamsa123"
+   },
+   {
+    "file": "ð-alt114.mp3",
+    "title": "File:Voiced alveolar non-sibilant fricative.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Ajho24"
+   },
+   {
+    "file": "ð-alt116.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   }
+  ]
+ },
+ "ŋ": {
+  "ipa": "ŋ",
+  "current": "File:Velar nasal.ogg",
+  "alternates": [
+   {
+    "file": "ŋ-alt117.mp3",
+    "title": "File:Labial-velar nasal stop.ogg",
+    "license": "Public domain",
+    "artist": "Anak 1"
+   }
+  ]
+ },
+ "ɑ": {
+  "ipa": "ɑ",
+  "current": "File:Open back unrounded vowel.ogg",
+  "alternates": [
+   {
+    "file": "ɑ-alt119.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɑ-alt120.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɑ-alt122.mp3",
+    "title": "File:Bilabial ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɑ-alt127.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɑ-alt128.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɑ-alt8.mp3",
+    "title": "File:Open mid back rounded vowel.ogg",
+    "license": "CC0",
+    "artist": "Noam Tesla"
+   },
+   {
+    "file": "ɑ-new0.mp3",
+    "title": "File:Nasalised open back unrounded vowel.ogg",
+    "license": "CC0",
+    "artist": "Manuel Pégourié-Gonnard"
+   }
+  ]
+ },
+ "ɔː": {
+  "ipa": "ɔː",
+  "current": "File:Open-mid back rounded vowel.ogg",
+  "alternates": [
+   {
+    "file": "ɔː-alt129.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɔː-alt130.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɔː-alt132.mp3",
+    "title": "File:Bilabial ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɔː-alt137.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɔː-alt138.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɔː-new0.mp3",
+    "title": "File:PR-open-mid back rounded vowel.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "RoachPeter"
+   },
+   {
+    "file": "ɔː-new1.mp3",
+    "title": "File:Open-mid-back-rounded-vowel.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Dan Palraz"
+   }
+  ]
+ },
+ "ə": {
+  "ipa": "ə",
+  "current": "File:Mid-central vowel.ogg",
+  "alternates": [
+   {
+    "file": "ə-alt139.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ə-alt140.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ə-alt142.mp3",
+    "title": "File:Bilabial ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ə-alt143.mp3",
+    "title": "File:Creaky-voiced glottal approximant.wav",
+    "license": "CC0",
+    "artist": "Eshaan011"
+   },
+   {
+    "file": "ə-alt145.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ə-alt146.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ə-new0.mp3",
+    "title": "File:LL-Q150 (fra)-WikiLucas00-schwa.wav",
+    "license": "CC BY-SA 4.0",
+    "artist": "Speaker: WikiLucas00\nRecorder: WikiLucas00"
+   }
+  ]
+ },
+ "ɝ": {
+  "ipa": "ɝ",
+  "current": "File:Open-mid central unrounded vowel.ogg",
+  "alternates": [
+   {
+    "file": "ɝ-alt147.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɝ-alt148.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɝ-alt149.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɝ-alt154.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɝ-alt155.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɝ-new0.mp3",
+    "title": "File:Regular and r-colored vowels.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "No machine-readable author provided. Denelson83 assumed (based on copyright claims)."
+   },
+   {
+    "file": "ɝ-new1.mp3",
+    "title": "File:En-us-R-coloured vowel.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Persent101"
+   }
+  ]
+ },
+ "ɪ": {
+  "ipa": "ɪ",
+  "current": "File:Near-close near-front unrounded vowel.ogg",
+  "alternates": [
+   {
+    "file": "ɪ-alt156.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɪ-alt157.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɪ-alt158.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɪ-alt163.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɪ-alt164.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ɪ-alt6.mp3",
+    "title": "File:Frontal vowels a æ ɛ e i.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Brendan Heberlein"
+   },
+   {
+    "file": "ɪ-alt7.mp3",
+    "title": "File:Nasalised open-mid back rounded vowel.ogg",
+    "license": "CC0",
+    "artist": "Manuel Pégourié-Gonnard"
+   }
+  ]
+ },
+ "ʃ": {
+  "ipa": "ʃ",
+  "current": "File:Voiceless palato-alveolar sibilant.ogg",
+  "alternates": [
+   {
+    "file": "ʃ-new0.mp3",
+    "title": "File:Echador Voiceless palato-alveolar sibilant Northern Latin Spanish.wav",
+    "license": "CC BY-SA 4.0",
+    "artist": "Saikoispro"
+   }
+  ]
+ },
+ "ʊ": {
+  "ipa": "ʊ",
+  "current": "File:Near-close near-back rounded vowel.ogg",
+  "alternates": [
+   {
+    "file": "ʊ-alt165.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ʊ-alt166.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ʊ-alt167.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ʊ-alt170.mp3",
+    "title": "File:Bilabial ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ʊ-alt173.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ʊ-alt174.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ʊ-new0.mp3",
+    "title": "File:Near-close near-back rounded vowel (ʊ).ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Brendan Heberlein"
+   },
+   {
+    "file": "ʊ-new1.mp3",
+    "title": "File:En-us-Near-close near-back rounded vowel2.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Sylvanmoon"
+   }
+  ]
+ },
+ "ʌ": {
+  "ipa": "ʌ",
+  "current": "File:Open-mid back unrounded vowel.ogg",
+  "alternates": [
+   {
+    "file": "ʌ-alt175.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ʌ-alt176.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ʌ-alt177.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ʌ-alt180.mp3",
+    "title": "File:Bilabial ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ʌ-alt183.mp3",
+    "title": "File:Voiced velar approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ʌ-alt184.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "ʌ-new0.mp3",
+    "title": "File:Open-mid back unrounded vowel (ʌ).ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "Brendan Heberlein"
+   },
+   {
+    "file": "ʌ-new1.mp3",
+    "title": "File:PR-open-mid back unrounded vowel.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "RoachPeter"
+   }
+  ]
+ },
+ "ʒ": {
+  "ipa": "ʒ",
+  "current": "File:Voiced palato-alveolar sibilant.ogg",
+  "alternates": []
+ },
+ "θ": {
+  "ipa": "θ",
+  "current": "File:Voiceless dental fricative.ogg",
+  "alternates": [
+   {
+    "file": "θ-alt187.mp3",
+    "title": "File:Alveolar ejective plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "θ-alt188.mp3",
+    "title": "File:Alveolar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "θ-alt189.mp3",
+    "title": "File:Alveolar lateral click.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "θ-alt192.mp3",
+    "title": "File:Voiceless alveolar plosive.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "θ-new0.mp3",
+    "title": "File:Voiceless Dental Fricative.ogg",
+    "license": "CC0",
+    "artist": "HuiXingMusic"
+   }
+  ]
+ }
+}
