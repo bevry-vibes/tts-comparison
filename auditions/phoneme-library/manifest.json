@@ -122,6 +122,12 @@
     "title": "File:Voiced palato-alveolar affricate pronunciation.oga",
     "license": "CC BY-SA 4.0",
     "artist": "XxXsuperprobablymanXxX"
+   },
+   {
+    "file": "dʒ-cat0.mp3",
+    "title": "File:Africada postalveolar sonora.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
    }
   ]
  },
@@ -188,6 +194,18 @@
     "title": "File:PR-voiceless labiodental fricative.ogg",
     "license": "CC BY-SA 4.0",
     "artist": "RoachPeter"
+   },
+   {
+    "file": "f-cat0.mp3",
+    "title": "File:Fricativa labiodental sorda.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
+   },
+   {
+    "file": "f-cat1.mp3",
+    "title": "File:Fricative labio-dentale éjective.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Original uploader was Vincent Ramos at fr.wikipedia"
    }
   ]
  },
@@ -242,6 +260,42 @@
     "title": "File:Prenasalized voiced velar plosive.ogg",
     "license": "CC BY 2.5",
     "artist": "unknown"
+   },
+   {
+    "file": "g-cat0.mp3",
+    "title": "File:Oclusiva velar sonora.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
+   },
+   {
+    "file": "g-cat1.mp3",
+    "title": "File:PR-voiced velar stop.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "RoachPeter"
+   },
+   {
+    "file": "g-cat2.mp3",
+    "title": "File:Voiced labial-velar plosive.ogg",
+    "license": "CC BY 2.5",
+    "artist": "No machine-readable author provided. Moyogo assumed (based on copyright claims)."
+   },
+   {
+    "file": "g-cat3.mp3",
+    "title": "File:Voiced labial-velar plosive1.ogg",
+    "license": "Public domain",
+    "artist": "Anak 1"
+   },
+   {
+    "file": "g-cat4.mp3",
+    "title": "File:Voiced velar plosive 02.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "g-cat5.mp3",
+    "title": "File:Voiced velar stop.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Britannic124"
    }
   ]
  },
@@ -362,6 +416,12 @@
     "title": "File:Voiceless alveolar plosive.ogg",
     "license": "CC BY-SA 3.0",
     "artist": "unknown"
+   },
+   {
+    "file": "j-cat0.mp3",
+    "title": "File:Aproximante palatal.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
    }
   ]
  },
@@ -404,6 +464,18 @@
     "title": "File:Nasal velar.ogg",
     "license": "Public domain",
     "artist": "Susana Freixeiro"
+   },
+   {
+    "file": "k-cat0.mp3",
+    "title": "File:Oclusiva velar sorda.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
+   },
+   {
+    "file": "k-cat1.mp3",
+    "title": "File:Voiceless labial-velar plosive.ogg",
+    "license": "Public domain",
+    "artist": "Anak 1"
    }
   ]
  },
@@ -440,6 +512,30 @@
     "title": "File:Voiceless alveolar approximant.ogg",
     "license": "CC BY-SA 4.0",
     "artist": "NoahKuhn9"
+   },
+   {
+    "file": "l-cat0.mp3",
+    "title": "File:Lateral dental.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
+   },
+   {
+    "file": "l-cat1.mp3",
+    "title": "File:Lateral palatal.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
+   },
+   {
+    "file": "l-cat2.mp3",
+    "title": "File:Velar lateral approximant.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "l-cat3.mp3",
+    "title": "File:Voiced dental lateral approximant.ogg",
+    "license": "CC BY-SA 4.0",
+    "artist": "YodaMaster445"
    }
   ]
  },
@@ -476,7 +572,20 @@
  "p": {
   "ipa": "p",
   "current": "File:Voiceless bilabial plosive.ogg",
-  "alternates": []
+  "alternates": [
+   {
+    "file": "p-cat0.mp3",
+    "title": "File:Oclusiva bilabial sorda.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
+   },
+   {
+    "file": "p-cat1.mp3",
+    "title": "File:Voiceless bilabial stop.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   }
+  ]
  },
  "r": {
   "ipa": "r",
@@ -505,7 +614,14 @@
  "s": {
   "ipa": "s",
   "current": "File:Voiceless alveolar sibilant.ogg",
-  "alternates": []
+  "alternates": [
+   {
+    "file": "s-cat0.mp3",
+    "title": "File:Fricativa alveolar sorda.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
+   }
+  ]
  },
  "t": {
   "ipa": "t",
@@ -552,6 +668,18 @@
     "title": "File:Aspirated voiceless bilabial stop.ogg",
     "license": "CC BY-SA 3.0",
     "artist": "unknown"
+   },
+   {
+    "file": "t-cat0.mp3",
+    "title": "File:Voiceless alveolar stop.ogg",
+    "license": "CC BY-SA 3.0",
+    "artist": "unknown"
+   },
+   {
+    "file": "t-cat1.mp3",
+    "title": "File:Voiceless labial-alveolar plosive.ogg",
+    "license": "CC BY 3.0",
+    "artist": "1tslmn2015"
    }
   ]
  },
@@ -564,6 +692,12 @@
     "title": "File:Chocolate Voiceless palato-alveolar affricate Latin Spanish.wav",
     "license": "CC BY-SA 4.0",
     "artist": "Saikoispro"
+   },
+   {
+    "file": "tʃ-cat0.mp3",
+    "title": "File:Africada postalveolar sorda.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
    }
   ]
  },
@@ -659,7 +793,14 @@
  "z": {
   "ipa": "z",
   "current": "File:Voiced alveolar sibilant.ogg",
-  "alternates": []
+  "alternates": [
+   {
+    "file": "z-cat0.mp3",
+    "title": "File:Fricativa alveolar sonorizada.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
+   }
+  ]
  },
  "æ": {
   "ipa": "æ",
@@ -880,6 +1021,12 @@
     "title": "File:Schwa.ogg",
     "license": "CC BY-SA 3.0",
     "artist": "No machine-readable author provided. Denelson83 assumed (based on copyright claims)."
+   },
+   {
+    "file": "ə-cat0.mp3",
+    "title": "File:Schwa.wav",
+    "license": "CC BY-SA 4.0",
+    "artist": "UofG Language Modules"
    }
   ]
  },
@@ -988,6 +1135,12 @@
     "title": "File:Echador Voiceless palato-alveolar sibilant Northern Latin Spanish.wav",
     "license": "CC BY-SA 4.0",
     "artist": "Saikoispro"
+   },
+   {
+    "file": "ʃ-cat0.mp3",
+    "title": "File:Fricativa postalveolar sorda.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
    }
   ]
  },
@@ -1102,7 +1255,14 @@
  "ʒ": {
   "ipa": "ʒ",
   "current": "File:Voiced palato-alveolar sibilant.ogg",
-  "alternates": []
+  "alternates": [
+   {
+    "file": "ʒ-cat0.mp3",
+    "title": "File:Fricativa postalveolar sonorizada.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
+   }
+  ]
  },
  "θ": {
   "ipa": "θ",
@@ -1137,6 +1297,12 @@
     "title": "File:Voiceless Dental Fricative.ogg",
     "license": "CC0",
     "artist": "HuiXingMusic"
+   },
+   {
+    "file": "θ-cat0.mp3",
+    "title": "File:Fricativa interdental sorda.ogg",
+    "license": "Public domain",
+    "artist": "Susana Freixeiro"
    }
   ]
  }

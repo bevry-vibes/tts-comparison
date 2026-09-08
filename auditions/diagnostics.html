@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TTS Showdown — engine diagnostics</title>
+<style>
+	body { font-family: -apple-system, system-ui, sans-serif; max-width: 1100px; margin: 2rem auto; padding: 0 1rem; background: #171412; color: #f5e3c4; }
+	h1 { font-size: 1.5rem; } h2 { font-size: 1.15rem; margin-top: 2.5rem; }
+	p.note { font-size: 0.85rem; color: #b8aca4; }
+	table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.85rem; }
+	th, td { border: 1px solid #3a3430; padding: 0.45rem 0.6rem; text-align: left; }
+	th { background: #242020; color: #e8b478; font-weight: 600; }
+	td.engine { font-weight: 600; color: #fff; white-space: nowrap; }
+	td.accent, td.gender { white-space: nowrap; }
+	.na { color: #6b615c; text-align: center; }
+	button.play { background: #b23a32; color: #fff; border: 0; border-radius: 6px; width: 34px; height: 28px; cursor: pointer; font-size: 0.8rem; }
+	button.play.playing { background: #3b4a8c; box-shadow: 0 0 0 2px #8fa3ff; }
+	button.play:hover { background: #8f2d27; }
+	.text { color: #b8aca4; font-style: italic; }
+</style>
+</head>
+<body>
+<h1>TTS Showdown — audition tables</h1>
+<p class="note">One-time A/B tests behind the decisions in FINDINGS.md (kept for reference — the calls are made). Voice tables live in <a style="color:#e8b478" href="index.html">index.html</a>. Pick with your ears. The incumbent was Piper <em>alan-low</em> at 16 kHz (machine-sounding). Small ▶ buttons play one clip at a time. Every engine runs locally, free, key-less on this Mac. Full findings: <a style="color:#e8b478" href="https://github.com/bevry-vibes/tts-comparison/blob/main/FINDINGS.md">FINDINGS.md</a>.</p><h2>4 · Kokoro trailing-artifact A/B (bird / stop / vision)</h2>
+<p class="note">Reported: “weird sound at the end” of Kokoro clips. <strong>A</strong> original (artifact), <strong>B</strong> trailing period (clean, natural fall, slightly longer), <strong>C</strong> energy-trimmed (cut at the silence dip, shortest).</p>
+<table id="kokoro-fix">
+<tr><th>Word</th><th>A · original</th><th>B · period</th><th>C · trimmed</th></tr>
+<tr><td class="engine">bird</td><td><button class="play" data-src="kokoro-fix-ab/bird-original.mp3">▶</button></td><td><button class="play" data-src="kokoro-fix-ab/bird-period.mp3">▶</button></td><td><button class="play" data-src="kokoro-fix-ab/bird-trimmed.mp3">▶</button></td></tr>
+<tr><td class="engine">stop</td><td><button class="play" data-src="kokoro-fix-ab/stop-original.mp3">▶</button></td><td><button class="play" data-src="kokoro-fix-ab/stop-period.mp3">▶</button></td><td><button class="play" data-src="kokoro-fix-ab/stop-trimmed.mp3">▶</button></td></tr>
+<tr><td class="engine">vision</td><td><button class="play" data-src="kokoro-fix-ab/vision-original.mp3">▶</button></td><td><button class="play" data-src="kokoro-fix-ab/vision-period.mp3">▶</button></td><td><button class="play" data-src="kokoro-fix-ab/vision-trimmed.mp3">▶</button></td></tr>
+</table>
+
+<script>
+	// Delegated listener — works for every section regardless of DOM order.
+	// Playing state: icon swaps to "⏸" and the button turns indigo.
+	let current = null
+	let currentBtn = null
+
+	function stopCurrent() {
+		if (current) { current.pause(); current.currentTime = 0 }
+		if (currentBtn) { currentBtn.classList.remove('playing'); currentBtn.textContent = '▶' }
+		current = null; currentBtn = null
+	}
+
+	document.addEventListener('click', (event) => {
+		const btn = event.target.closest('button.play')
+		if (!btn) return
+		const src = btn.dataset.src
+		if (currentBtn === btn) { stopCurrent(); return }
+		stopCurrent()
+		current = new Audio(src)
+		currentBtn = btn
+		btn.classList.add('playing')
+		btn.textContent = '⏸'
+		current.onended = () => stopCurrent()
+		current.onerror = () => stopCurrent()
+		current.play()
+	})
+</script>
+
+
+<h2>5 · Breath-removal A/B — the four voices you flagged</h2>
+<p class="note">Same clip, three takes: <strong>original</strong> (breaths audible), <strong>energy-trim</strong> (hand-tuned gate, cuts sustained-quiet edges), <strong>silero-vad</strong> (a 2&nbsp;MB trained model decides what is speech). Pick a method — it gets applied everywhere.</p>
+<table>
+<tr><th>Voice</th><th>Text</th><th>original</th><th>energy-trim</th><th>silero-vad</th></tr>
+<tr><td class="engine">Kokoro bf_isabella (UK F)</td><td class="text">bird</td><td><button class="play" data-src="kokoro-bf_isabella/bird.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_isabella-energy/bird.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_isabella-vad/bird.mp3">▶</button></td></tr><tr><td class="engine">Kokoro bf_isabella (UK F)</td><td class="text">stop</td><td><button class="play" data-src="kokoro-bf_isabella/stop.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_isabella-energy/stop.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_isabella-vad/stop.mp3">▶</button></td></tr><tr><td class="engine">Kokoro bf_isabella (UK F)</td><td class="text">The best sand in the land.</td><td><button class="play" data-src="kokoro-bf_isabella/sentence.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_isabella-energy/sentence.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_isabella-vad/sentence.mp3">▶</button></td></tr><tr><td class="engine">Kokoro bf_isabella (UK F)</td><td class="text">Sumba bisa!</td><td><button class="play" data-src="kokoro-bf_isabella/sumba.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_isabella-energy/sumba.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_isabella-vad/sumba.mp3">▶</button></td></tr><tr><td class="engine">Kokoro bf_emma (UK F)</td><td class="text">bird</td><td><button class="play" data-src="kokoro-bf_emma/bird.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_emma-energy/bird.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_emma-vad/bird.mp3">▶</button></td></tr><tr><td class="engine">Kokoro bf_emma (UK F)</td><td class="text">stop</td><td><button class="play" data-src="kokoro-bf_emma/stop.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_emma-energy/stop.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_emma-vad/stop.mp3">▶</button></td></tr><tr><td class="engine">Kokoro bf_emma (UK F)</td><td class="text">The best sand in the land.</td><td><button class="play" data-src="kokoro-bf_emma/sentence.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_emma-energy/sentence.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_emma-vad/sentence.mp3">▶</button></td></tr><tr><td class="engine">Kokoro bf_emma (UK F)</td><td class="text">Sumba bisa!</td><td><button class="play" data-src="kokoro-bf_emma/sumba.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_emma-energy/sumba.mp3">▶</button></td><td><button class="play" data-src="breath-ab/kokoro-bf_emma-vad/sumba.mp3">▶</button></td></tr><tr><td class="engine">Magpie Leo (US M)</td><td class="text">bird</td><td><button class="play" data-src="magpie-leo-us-m/bird.mp3">▶</button></td><td><button class="play" data-src="breath-ab/magpie-leo-us-m-energy/bird.mp3">▶</button></td><td><button class="play" data-src="breath-ab/magpie-leo-us-m-vad/bird.mp3">▶</button></td></tr><tr><td class="engine">Magpie Leo (US M)</td><td class="text">stop</td><td><button class="play" data-src="magpie-leo-us-m/stop.mp3">▶</button></td><td><button class="play" data-src="breath-ab/magpie-leo-us-m-energy/stop.mp3">▶</button></td><td><button class="play" data-src="breath-ab/magpie-leo-us-m-vad/stop.mp3">▶</button></td></tr><tr><td class="engine">Magpie Leo (US M)</td><td class="text">The best sand in the land.</td><td><button class="play" data-src="magpie-leo-us-m/sentence.mp3">▶</button></td><td><button class="play" data-src="breath-ab/magpie-leo-us-m-energy/sentence.mp3">▶</button></td><td><button class="play" data-src="breath-ab/magpie-leo-us-m-vad/sentence.mp3">▶</button></td></tr><tr><td class="engine">Magpie Leo (US M)</td><td class="text">Sumba bisa!</td><td><button class="play" data-src="magpie-leo-us-m/sumba.mp3">▶</button></td><td><button class="play" data-src="breath-ab/magpie-leo-us-m-energy/sumba.mp3">▶</button></td><td><button class="play" data-src="breath-ab/magpie-leo-us-m-vad/sumba.mp3">▶</button></td></tr><tr><td class="engine">Breeze (UK F designed)</td><td class="text">bird</td><td><button class="play" data-src="breeze-uk-f/bird.mp3">▶</button></td><td><button class="play" data-src="breath-ab/breeze-uk-f-energy/bird.mp3">▶</button></td><td><button class="play" data-src="breath-ab/breeze-uk-f-vad/bird.mp3">▶</button></td></tr><tr><td class="engine">Breeze (UK F designed)</td><td class="text">stop</td><td><button class="play" data-src="breeze-uk-f/stop.mp3">▶</button></td><td><button class="play" data-src="breath-ab/breeze-uk-f-energy/stop.mp3">▶</button></td><td><button class="play" data-src="breath-ab/breeze-uk-f-vad/stop.mp3">▶</button></td></tr><tr><td class="engine">Breeze (UK F designed)</td><td class="text">The best sand in the land.</td><td><button class="play" data-src="breeze-uk-f/sentence.mp3">▶</button></td><td><button class="play" data-src="breath-ab/breeze-uk-f-energy/sentence.mp3">▶</button></td><td><button class="play" data-src="breath-ab/breeze-uk-f-vad/sentence.mp3">▶</button></td></tr><tr><td class="engine">Breeze (UK F designed)</td><td class="text">Sumba bisa!</td><td><button class="play" data-src="breeze-uk-f/sumba.mp3">▶</button></td><td><button class="play" data-src="breath-ab/breeze-uk-f-energy/sumba.mp3">▶</button></td><td><button class="play" data-src="breath-ab/breeze-uk-f-vad/sumba.mp3">▶</button></td></tr>
+</table>
+
+
+<h2>6 · Phoneme test — can they speak an isolated sound?</h2>
+<p class="note">The app needs 41 isolated phoneme clips (today: real Commons recordings for 35, TTS fallback for 5 diphthongs). Prolonged spellings fed as text — judge whether any engine is usable as a consistent phoneme voice.</p>
+<table>
+<tr><th>Voice</th><th>ʃ <span class="text">“shhh”</span></th><th>s <span class="text">“sss”</span></th><th>f <span class="text">“fff”</span></th><th>m <span class="text">“mmm”</span></th><th>ɑː <span class="text">“aaah”</span></th><th>iː <span class="text">“eee”</span></th></tr>
+<tr><td class="engine">Real Commons recordings (the app's current phoneme audio)</td><td><button class="play" data-src="phonemes/reference-real/shhh.mp3">▶</button></td><td><button class="play" data-src="phonemes/reference-real/sss.mp3">▶</button></td><td><button class="play" data-src="phonemes/reference-real/fff.mp3">▶</button></td><td><button class="play" data-src="phonemes/reference-real/mmm.mp3">▶</button></td><td><button class="play" data-src="phonemes/reference-real/aaah.mp3">▶</button></td><td><button class="play" data-src="phonemes/reference-real/eee.mp3">▶</button></td></tr><tr><td class="engine">Kokoro bf_isabella (UK F)</td><td><button class="play" data-src="phonemes/kokoro-bf_isabella/shhh.mp3">▶</button></td><td><button class="play" data-src="phonemes/kokoro-bf_isabella/sss.mp3">▶</button></td><td><button class="play" data-src="phonemes/kokoro-bf_isabella/fff.mp3">▶</button></td><td><button class="play" data-src="phonemes/kokoro-bf_isabella/mmm.mp3">▶</button></td><td><button class="play" data-src="phonemes/kokoro-bf_isabella/aaah.mp3">▶</button></td><td><button class="play" data-src="phonemes/kokoro-bf_isabella/eee.mp3">▶</button></td></tr><tr><td class="engine">Breeze TTS 2 (UK F designed)</td><td><button class="play" data-src="phonemes/breeze-uk-f/shhh.mp3">▶</button></td><td><button class="play" data-src="phonemes/breeze-uk-f/sss.mp3">▶</button></td><td><button class="play" data-src="phonemes/breeze-uk-f/fff.mp3">▶</button></td><td><button class="play" data-src="phonemes/breeze-uk-f/mmm.mp3">▶</button></td><td><button class="play" data-src="phonemes/breeze-uk-f/aaah.mp3">▶</button></td><td><button class="play" data-src="phonemes/breeze-uk-f/eee.mp3">▶</button></td></tr><tr><td class="engine">Higgs Audio v3 (default)</td><td><button class="play" data-src="phonemes/higgs-default/shhh.mp3">▶</button></td><td><button class="play" data-src="phonemes/higgs-default/sss.mp3">▶</button></td><td><button class="play" data-src="phonemes/higgs-default/fff.mp3">▶</button></td><td><button class="play" data-src="phonemes/higgs-default/mmm.mp3">▶</button></td><td><button class="play" data-src="phonemes/higgs-default/aaah.mp3">▶</button></td><td><button class="play" data-src="phonemes/higgs-default/eee.mp3">▶</button></td></tr><tr><td class="engine">Magpie Sofia (US F)</td><td><button class="play" data-src="phonemes/magpie-sofia/shhh.mp3">▶</button></td><td><button class="play" data-src="phonemes/magpie-sofia/sss.mp3">▶</button></td><td><button class="play" data-src="phonemes/magpie-sofia/fff.mp3">▶</button></td><td><button class="play" data-src="phonemes/magpie-sofia/mmm.mp3">▶</button></td><td><button class="play" data-src="phonemes/magpie-sofia/aaah.mp3">▶</button></td><td><button class="play" data-src="phonemes/magpie-sofia/eee.mp3">▶</button></td></tr><tr><td class="engine">Piper alan-medium (UK M)</td><td><button class="play" data-src="phonemes/piper-alan-medium/shhh.mp3">▶</button></td><td><button class="play" data-src="phonemes/piper-alan-medium/sss.mp3">▶</button></td><td><button class="play" data-src="phonemes/piper-alan-medium/fff.mp3">▶</button></td><td><button class="play" data-src="phonemes/piper-alan-medium/mmm.mp3">▶</button></td><td><button class="play" data-src="phonemes/piper-alan-medium/aaah.mp3">▶</button></td><td><button class="play" data-src="phonemes/piper-alan-medium/eee.mp3">▶</button></td></tr><tr><td class="engine">Chatterbox (default)</td><td><button class="play" data-src="phonemes/chatterbox-default/shhh.mp3">▶</button></td><td><button class="play" data-src="phonemes/chatterbox-default/sss.mp3">▶</button></td><td><button class="play" data-src="phonemes/chatterbox-default/fff.mp3">▶</button></td><td><button class="play" data-src="phonemes/chatterbox-default/mmm.mp3">▶</button></td><td><button class="play" data-src="phonemes/chatterbox-default/aaah.mp3">▶</button></td><td><button class="play" data-src="phonemes/chatterbox-default/eee.mp3">▶</button></td></tr><tr><td class="engine">macOS Karen (AU F)</td><td><button class="play" data-src="phonemes/macos-karen-au-f/shhh.mp3">▶</button></td><td><button class="play" data-src="phonemes/macos-karen-au-f/sss.mp3">▶</button></td><td><button class="play" data-src="phonemes/macos-karen-au-f/fff.mp3">▶</button></td><td><button class="play" data-src="phonemes/macos-karen-au-f/mmm.mp3">▶</button></td><td><button class="play" data-src="phonemes/macos-karen-au-f/aaah.mp3">▶</button></td><td><button class="play" data-src="phonemes/macos-karen-au-f/eee.mp3">▶</button></td></tr>
+</table>
+
+
+<h2>7 · IPA input — real UTF-8 phonemes, not spelled-out sounds</h2>
+<p class="note">You were right: the earlier test fed ASCII spellings ("shhh") and every engine tried to pronounce the letters. Harness research found proper phoneme input: <strong>Kokoro</strong> exposes <code>generate_from_tokens()</code> — raw IPA straight to the vocoder (≤510 chars); <strong>Piper</strong> accepts <code>[[…]]</code> blocks (espeak/IPA id map); <strong>Higgs</strong> has no phoneme path (LLM tokenizer — it received "ʃ" as plain text and improvised, loudly). All 13 Kokoro IPA clips verified as structured speech — including the five diphthongs that were TTS-only fallbacks and the AU ɜː.</p>
+<table>
+<tr><th>Voice</th><th>ʃ</th><th>θ</th><th>s</th><th>f</th><th>m</th><th>ɑː</th><th>iː</th><th>eɪ</th><th>aɪ</th><th>ɔɪ</th><th>aʊ</th><th>əʊ</th><th>ɜː</th></tr>
+<tr><td class="engine">Kokoro bf_isabella (raw IPA)</td><td><button class="play" data-src="phonemes-ipa/kokoro-bf_isabella/ʃ.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/kokoro-bf_isabella/θ.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/kokoro-bf_isabella/s.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/kokoro-bf_isabella/f.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/kokoro-bf_isabella/m.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/kokoro-bf_isabella/ɑː.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/kokoro-bf_isabella/iː.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/kokoro-bf_isabella/eɪ.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/kokoro-bf_isabella/aɪ.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/kokoro-bf_isabella/ɔɪ.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/kokoro-bf_isabella/aʊ.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/kokoro-bf_isabella/əʊ.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/kokoro-bf_isabella/ɜː.mp3">▶</button></td></tr>
+<tr><td class="engine">Piper alan-medium ([[…]] blocks)</td><td class="na">—</td><td><button class="play" data-src="phonemes-ipa/piper-alan-medium/T-espeak.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/piper-alan-medium/S-espeak.mp3">▶</button></td><td class="na">—</td><td class="na">—</td><td><button class="play" data-src="phonemes-ipa/piper-alan-medium/aa-espeak.mp3">▶</button></td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td></tr>
+<tr><td class="engine">Higgs v3 (plain text "ʃ" — improvised)</td><td><button class="play" data-src="phonemes-ipa/higgs-default/ʃ.mp3">▶</button></td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td></tr>
+<tr><td class="engine">Reference — real Commons recordings</td><td><button class="play" data-src="phonemes-ipa/reference-real/ʃ.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/reference-real/θ.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/reference-real/s.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/reference-real/f.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/reference-real/m.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/reference-real/ɑː.mp3">▶</button></td><td><button class="play" data-src="phonemes-ipa/reference-real/iː.mp3">▶</button></td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td class="na">—</td></tr>
+</table>
+
+
+<h2>8 · Higgs deep-dive — config variations & accent cloning</h2>
+<p class="note">Your favourite engine, explored. mlx-audio exposes sampling knobs (<code>--speed --temperature --cfg_scale</code>), and Higgs v3's Python API takes reference audio — so macOS system voices were fed in as cloning references to steer its accent (Karen for Australian English, Damayanti for Indonesian). Voice cloning uses system-voice output as reference — personal-use territory; note the non-commercial model license.</p>
+<h3>Config variations — "The best sand in the land."</h3>
+<table>
+<tr><th>Setting</th><th>Play</th></tr>
+<tr><td class="engine">speed 0.8×</td><td><button class="play" data-src="higgs-config/speed-08.mp3">▶</button></td></tr><tr><td class="engine">speed 1.2×</td><td><button class="play" data-src="higgs-config/speed-12.mp3">▶</button></td></tr><tr><td class="engine">temperature 0.3 (steady)</td><td><button class="play" data-src="higgs-config/temp-03.mp3">▶</button></td></tr><tr><td class="engine">temperature 0.9 (expressive)</td><td><button class="play" data-src="higgs-config/temp-09.mp3">▶</button></td></tr><tr><td class="engine">cfg_scale 5 (stronger guidance)</td><td><button class="play" data-src="higgs-config/cfg-5.mp3">▶</button></td></tr>
+</table>
+<h3>Accent cloning via system-voice references</h3>
+<table>
+<tr><th>Reference voice</th><th>Play</th></tr>
+<tr><td class="engine">Higgs cloned from macOS Karen (AU F) — "Bird. Stop. The best sand in the land."</td><td><button class="play" data-src="higgs-karen-ref/clone-test.mp3">▶</button></td></tr><tr><td class="engine">Higgs cloned from macOS Damayanti (id-ID F) — "Kuda Bisa adalah kuda poni dari Sumba. Sumba bisa!"</td><td><button class="play" data-src="higgs-damayanti-ref/clone-test.mp3">▶</button></td></tr>
+</table>
+
+
+<h2>9 · Phoneme sources — fixing the “phoneme-a-phoneme” sandwich</h2>
+<p class="note">The Commons recordings wrap each phoneme in a vowel sandwich (e.g. “ʃ-a-ʃ”), which you find annoying. Three fixes compared: extracting the clean first consonant from the sandwich (energy-dip cut, works for sustained sounds — fricatives/nasals; plosives keep their release), and alternate speaker takes from Commons (484 files in the phonetic-samples category; several <strong>public domain</strong>, the rest CC BY-SA — both license-compatible). The extraction is deterministic, so it can run over all 35 bundled recordings automatically if this direction wins.</p>
+<table>
+<tr><th>Source</th><th>Play</th></tr>
+<tr><td class="engine">ʃ — current app audio (the "ʃ-a-ʃ" sandwich)</td><td><button class="play" data-src="phoneme-sources/ʃ-original.mp3">▶</button></td></tr><tr><td class="engine">ʃ — extracted first consonant from the sandwich</td><td><button class="play" data-src="phoneme-sources/ʃ-extracted.mp3">▶</button></td></tr><tr><td class="engine">ʃ — alternate speaker take (Northern Latin Spanish, CC BY-SA 4.0)</td><td><button class="play" data-src="phoneme-sources/ʃ-spanish-alt.mp3">▶</button></td></tr><tr><td class="engine">θ — current app audio</td><td><button class="play" data-src="phoneme-sources/θ-original.mp3">▶</button></td></tr><tr><td class="engine">θ — extracted first consonant</td><td><button class="play" data-src="phoneme-sources/θ-extracted.mp3">▶</button></td></tr><tr><td class="engine">θ — alternate take (Spanish, Public domain)</td><td><button class="play" data-src="phoneme-sources/θ-spanish-pd.mp3">▶</button></td></tr><tr><td class="engine">s — extracted first consonant</td><td><button class="play" data-src="phoneme-sources/s-extracted.mp3">▶</button></td></tr><tr><td class="engine">f — extracted (source was already short — check for clipping)</td><td><button class="play" data-src="phoneme-sources/f-extracted.mp3">▶</button></td></tr><tr><td class="engine">m — extracted first consonant</td><td><button class="play" data-src="phoneme-sources/m-extracted.mp3">▶</button></td></tr>
+</table>
+
+
+
+</body>
+</html>
